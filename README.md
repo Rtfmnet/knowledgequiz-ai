@@ -15,11 +15,11 @@ An AI quiz generator that tests your knowledge on **ANY** topic and identifies g
 ### Quick Setup
 1. **Download** the [knowledgequiz-runner.html](https://raw.githubusercontent.com/Rtfmnet/knowledgequiz-ai/main/knowledgequiz-runner.html) file (right-click → Save As)
 2. **Prepare Questions** - Choose one option:
-   - Download pre-generated XML files [quizzes](quizzes)
+   - Download pre-generated XML files [quizzes](quizzes) (click to browse and download files)
    - Generate custom XML file using AI
 
 ### How to Generate Custom XML Questions
-1. **Take the Prompt Template** - Use this [custom-xml-quiz-template.txt](custom-xml-quiz-template.txt) template
+1. **Take the Prompt Template** - Use this [custom-xml-quiz-template.txt](https://raw.githubusercontent.com/Rtfmnet/knowledgequiz-ai/main/custom-xml-quiz-template.txt) template (right-click → Save As)
 2. **Update for Your Topic** - Modify it with your subject and difficulty level
 3. **Ask Any GenAI** - Submit the updated prompt to any AI tool (Claude, ChatGPT, etc.)
 4. **Get Your XML** - The AI will generate a compatible XML file for your quiz, download it.
