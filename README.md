@@ -13,9 +13,9 @@ An AI quiz generator that tests your knowledge on **ANY** topic and identifies g
 ## Getting Started
 
 ### Quick Setup
-1. **Download** the [knowledgequiz-runner.html](https://raw.githubusercontent.com/Rtfmnet/knowledgequiz-ai/main/knowledgequiz-runner.html) file (right-click → Save As)
+1. **Download** the [knowledgequiz-runner.html](https://raw.githubusercontent.com/Rtfmnet/knowledgequiz-ai/main/knowledgequiz-runner.html) file (right-click → Save link as...)
 2. **Prepare Questions** - Choose one option:
-   - Download pre-generated XML files [quizzes](quizzes) (click to browse and download files)
+   - Download pre-generated XML [quizzes.zip](https://raw.githubusercontent.com/Rtfmnet/knowledgequiz-ai/main/quizzes.zip) file (right-click → Save link as...)
    - Generate custom XML file using AI
 
 ### How to Generate Custom XML Questions
