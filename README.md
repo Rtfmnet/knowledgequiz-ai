@@ -15,7 +15,7 @@ An AI quiz generator that tests your knowledge on **ANY** topic and identifies g
 ### Quick Setup
 1. **Download** the [knowledgequiz-runner.html](https://raw.githubusercontent.com/Rtfmnet/knowledgequiz-ai/main/knowledgequiz-runner.html) file (right-click → Save link as...)
 2. **Prepare Questions** - Choose one option:
-   - Download pre-generated XML [quizzes.zip](https://raw.githubusercontent.com/Rtfmnet/knowledgequiz-ai/main/quizzes.zip) file (right-click → Save link as...)
+   - Download pre-generated XML [quizzes.zip](https://raw.githubusercontent.com/Rtfmnet/knowledgequiz-ai/main/quizzes.zip) file (right-click → Save link as...) - AWS Certified AI Practitioner exam preparation and Scrum questions
    - Generate custom XML file using AI
 
 ### How to Generate Custom XML Questions
