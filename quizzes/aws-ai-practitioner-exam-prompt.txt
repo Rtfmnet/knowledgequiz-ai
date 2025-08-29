@@ -1,0 +1,89 @@
+Ignore text lines started by "#"
+#key context - please specify
+KnowledgeArea="AWS Certified AI Practitioner Exam"
+Remember what is KnowledgeArea and TotalQuestions in context of this prompt. Whenever I mention KnowledgeArea please consider it as the value specified above.
+
+#specify amount of questions
+TotalQuestions = 20
+
+#conext
+I need to verify my knowledge of KnowledgeArea
+
+#input data - please update
+Take KnowledgeArea Guide as a scope to generate questions.
+Use AWS or Amazon sites to search information to generate questions.
+
+#complexity - update if need
+Approximate complexity levels of questions: 
+10% intermediate
+80% advanced
+10% expert.
+Generate about 35% as practical questions
+
+#creativity - update if need
+Generate questions with medium creativity (QuestionsTemperature = temperature = 0.5)
+Generate XML format using deterministic settings (temperature=0) to ensure consistent, reproducible output. 
+
+#role - update if need
+Act as an expert in KnowledgeArea 
+When generate XML acts as an expert in XML
+
+#file generation
+Finally verify each question for accuracy, self-consistency and unambiguity in questions, answers and answer options. 
+Generate TotalQuestions questions as one XML file. Use one solid XML schema based on the provided XML Template to generate questions.
+When generating XML use &amp; for &, &lt; for <, &gt; for >, &quot; for ", and &apos; for '
+Make sure generated XML file is correct, use best practices and tools to validate it.
+
+#tunning
+Generate incorrect options (correct=false) in a way that makes it difficult to identify them as incorrect during survey. For example avoid adding text "only" to incorrect multiple option.
+
+XML Template v1.2
+<quiz>
+<metadata>
+<title>KnowledgeArea Quiz</title>
+<info>
+<knowledge-area>KnowledgeArea</knowledge-area>
+<total-questions>TotalQuestions</total-questions>
+<model>Put here your model name</model>
+<temperature>Put here temperature used to generate questions (QuestionsTemperature)</temperature>
+</info>
+</metadata>
+
+<question id="q001" type="single-choice" domain="Domain" complexity="intermediate OR advanced OR expert" >
+<text>Question text</text>
+<options>
+<option id="a" correct="false">Option text</option>
+<option id="b" correct="true">Option text</option>
+<option id="c" correct="false">Option text</option>
+</options>
+<explanation>Explanation text including URIs</explanation>
+</question>
+
+<question id="q002" type="multiple-choice" domain="Domain" complexity="intermediate OR advanced OR expert">
+<text>Question text</text>
+<options>
+<option id="a" correct="true">Option text</option>
+<option id="b" correct="true">Option text</option> 
+<option id="c" correct="false">Option text</option>
+</options>
+<explanation>Explanation text including URIs</explanation>
+</question>
+
+<question id="q003" type="matching" 
+domain="Domain" complexity="intermediate OR advanced OR expert">
+<text>Question text</text>
+<left-items>
+<item id="l1">Item text</item>
+<item id="l2">Item text</item>
+</left-items>
+<right-items>
+<item id="r1">Item text</item>
+<item id="r2">Item text</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r1"/>
+</correct-matches>
+<explanation>Explanation text including URIs</explanation>
+</question>
+</quiz>

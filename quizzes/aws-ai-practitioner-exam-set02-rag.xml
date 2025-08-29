@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<metadata>
+<title>AWS Certified AI Practitioner Quiz</title>
+<info>
+<knowledge-area>AWS Certified AI Practitioner Exam</knowledge-area>
+<total-questions>65</total-questions>
+<model>Claude 3.5 Sonnet</model>
+<temperature>0.75</temperature>
+</info>
+</metadata>
+
+<question id="q001" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>What is the primary difference between supervised and unsupervised learning in machine learning?</text>
+<options>
+<option id="a" correct="false">Supervised learning uses neural networks while unsupervised learning uses traditional algorithms</option>
+<option id="b" correct="true">Supervised learning uses labeled data while unsupervised learning finds patterns in unlabeled data</option>
+<option id="c" correct="false">Supervised learning is faster to train while unsupervised learning requires more computational resources</option>
+<option
+ id="d" correct="false">Supervised learning works with structured data while unsupervised learning works with unstructured data</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html">Supervised learning requires labeled training data to learn patterns, while unsupervised learning discovers hidden patterns in unlabeled data.</explanation>
+</question>
+
+<question id="q002" type="multiple-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>Which Amazon Bedrock capabilities enable customization of foundation models? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Fine-tuning with domain-specific datasets</option>
+<option id="b" correct="true">Retrieval-Augmented Generation (RAG) implementation</option>
+<option id="c" correct="false">Automatic hyperparameter optimization</option>
+<option id="d" correct="true">Custom model inference endpoints</option>
+<option id="e" correct="false">Built-in data preprocessing pipelines</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html">Amazon Bedrock supports fine-tuning, RAG, and custom inference endpoints for model customization.</explanation>
+</question>
+
+<question id="q003" type="single-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>A company needs to track all API calls made to Amazon Bedrock for compliance auditing. Which AWS service should they implement?</text>
+<options>
+<option id="a" correct="false">Amazon CloudWatch</option>
+<option id="b" correct="true">AWS CloudTrail</option>
+<option id="c" correct="false">AWS Config</option>
+<option id="d" correct="false">Amazon Inspector</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/cloudtrail/latest/userguide/cloudtrail-user-guide.html">AWS CloudTrail logs API calls including user identity, timestamp, and request details for compliance purposes.</explanation>
+</question>
+
+<question id="q004" type="matching" domain="Fundamentals of Generative AI" complexity="expert">
+<text>Match the generative AI concepts with their correct definitions:</text>
+<left-items>
+<item id="l1">Tokens</item>
+<item id="l2">Embeddings</item>
+<item id="l3">Chunking</item>
+</left-items>
+<right-items>
+<item id="r1">Vector representations of text or data</item>
+<item id="r2">Breaking text into smaller segments</item>
+<item id="r3">Basic units of text processing</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r3"/>
+<match left-id="l2" right-id="r1"/>
+<match left-id="l3" right-id="r2"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Tokens are basic text units, embeddings are vector representations, and chunking divides text into segments.</explanation>
+</question>
+
+<question id="q005" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>Which prompt engineering technique involves providing examples within the prompt to guide model behavior?</text>
+<options>
+<option id="a" correct="false">Zero-shot prompting</option>
+<option id="b" correct="true">Few-shot prompting</option>
+<option id="c" correct="false">Chain-of-thought prompting</option>
+<option id="d" correct="false">Role-based prompting</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering.html">Few-shot prompting includes examples in the prompt to demonstrate the desired output format and behavior.</explanation>
+</question>
+
+<question id="q006" type="single-choice" domain="Fundamentals of AI and ML" complexity="expert">
+<text>A data scientist observes that their model achieves 98% accuracy on training data but only 65% on test data. What is the most likely cause?</text>
+<options>
+<option id="a" correct="false">Underfitting due to insufficient model complexity</option>
+<option id="b" correct="true">Overfitting due to memorizing training patterns</option>
+<option id="c" correct="false">Data
+ leakage between training and test sets</option>
+<option id="d" correct="false">Insufficient training iterations</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-validation.html">High training accuracy with low test accuracy indicates overfitting, where the model memorizes training data rather than learning generalizable patterns.</explanation>
+</question>
+
+<question id="q007" type="multiple-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which practices help ensure responsible AI development? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Implementing bias detection and mitigation strategies</option>
+<option id="b" correct="true">Establishing clear governance frameworks</option>
+<option id="c" correct="false">Maximizing model accuracy regardless of fairness</option>
+<option id="d" correct="true">Ensuring transparency in AI decision-making processes</option>
+<option id="e" correct="false">Prioritizing speed of deployment over ethical considerations</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html">Responsible AI requires bias mitigation, governance frameworks, and transparency while balancing accuracy with fairness.</explanation>
+</question>
+
+<question id="q008" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>What is the primary advantage of Retrieval-Augmented Generation (RAG) over fine-tuning for incorporating domain-specific knowledge?</text>
+<options>
+<option id="a" correct="false">RAG requires less computational resources than fine-tuning</option>
+<option id="b" correct="true">RAG allows dynamic updates without retraining the model</option>
+<option id="c" correct="false">RAG produces more accurate results than fine-tuning</option>
+<option id="d" correct="false">RAG works better with smaller datasets than fine-tuning</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html">RAG enables real-time knowledge updates by retrieving relevant information without requiring model retraining.</explanation>
+</question>
+
+<question id="q009" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon SageMaker feature is specifically designed for detecting bias and explaining model predictions?</text>
+<options>
+<option id="a" correct="false">SageMaker Data Wrangler</option>
+<option id="b" correct="true">SageMaker Clarify</option>
+<option id="c" correct="false">SageMaker Feature Store</option>
+<option id="d" correct="false">SageMaker Model Monitor</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html">SageMaker Clarify provides tools for detecting bias and explaining machine learning model predictions.</explanation>
+</question>
+
+<question id="q010" type="multiple-choice" domain="Security, Compliance, and Governance" complexity="expert">
+<text>Which security measures should be implemented when deploying AI models in production? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Encryption of data in transit and at rest</option>
+<option id="b" correct="true">Role-based access control (RBAC)</option>
+<option id="c" correct="false">Public access to model endpoints for testing</option>
+<option id="d" correct="true">Regular security audits and vulnerability assessments</option>
+<option id="e" correct="true">Network isolation using VPC endpoints</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/security.html">Production AI deployments require encryption, access controls, security audits, and network isolation for comprehensive security.</explanation>
+</question>
+
+<question id="q011" type="single-choice" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>What type of neural network architecture is primarily used in modern large language models?</text>
+<options>
+<option id="a" correct="false">Convolutional Neural Networks (CNNs)</option>
+<option id="b" correct="false">Recurrent Neural Networks (RNNs)</option>
+<option id="c" correct="true">Transformer architecture</option>
+<option id="d" correct="false">Long Short-Term Memory (LSTM) networks</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Modern LLMs are built on transformer architecture, which enables parallel processing and attention mechanisms.</explanation>
+</question>
+
+
+<question id="q012" type="single-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>A company wants to implement a chatbot that can answer questions about their internal documentation. Which approach would be most effective?</text>
+<options>
+<option id="a" correct="false">Fine-tune a foundation model on the company&apos;s documentation</option>
+<option id="b" correct="true">Implement RAG with the documentation as the knowledge base</option>
+<option id="c" correct="false">Use prompt engineering with the entire documentation in the context</option>
+<option id="d" correct="false">Train a custom model from scratch using the documentation</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html">RAG is ideal for question-answering systems as it retrieves relevant information dynamically and provides source attribution.</explanation>
+</question>
+
+<question id="q013" type="matching" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Match the ML algorithm types with their appropriate use cases:</text>
+<left-items>
+<item id="l1">K-Means Clustering</item>
+<item id="l2">Linear Regression</item>
+<item id="l3">Random Forest</item>
+</left-items>
+<right-items>
+<item id="r1">Predicting continuous numerical values</item>
+<item id="r2">Grouping similar data points</item>
+<item id="r3">Classification with feature importance</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r1"/>
+<match left-id="l3" right-id="r3"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html">K-Means groups data, Linear Regression predicts continuous values, and Random Forest provides classification with interpretability.</explanation>
+</question>
+
+<question id="q014" type="single-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which Amazon Bedrock feature helps implement responsible AI by filtering harmful content?</text>
+<options>
+<option id="a" correct="false">Model customization</option>
+<option id="b" correct="true">Guardrails</option>
+<option id="c" correct="false">Knowledge bases</option>
+<option id="d" correct="false">Model evaluation</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html">Guardrails for Amazon Bedrock help filter harmful content and implement responsible AI practices.</explanation>
+</question>
+
+<question id="q015" type="multiple-choice" domain="Fundamentals of Generative AI" complexity="expert">
+<text>Which factors should be considered when selecting a foundation model? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Model size and computational requirements</option>
+<option id="b" correct="true">Task-specific performance benchmarks</option>
+<option id="c" correct="false">Model training duration</option>
+<option id="d" correct="true">Licensing and usage restrictions</option>
+<option id="e" correct="true">Supported input and output modalities</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html">Model selection requires considering computational needs, performance, licensing, and supported modalities.</explanation>
+</question>
+
+<question id="q016" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>What is the most appropriate data format for instruction-based fine-tuning of language models?</text>
+<options>
+<option id="a" correct="false">Images labeled with categories</option>
+<option id="b" correct="true">Prompt-response text pairs</option>
+<option id="c" correct="false">Audio files with transcriptions</option>
+<option id="d" correct="false">Structured tabular data</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html">Instruction-based fine-tuning requires prompt-response pairs to teach the model desired behavior patterns.</explanation>
+</question>
+
+<question id="q017" type="single-choice" domain="Security, Compliance, and Governance" complexity="expert">
+<text>A healthcare organization needs to ensure their AI models comply with HIPAA regulations. Which approach is
+ most critical?</text>
+<options>
+<option id="a" correct="false">Using only open-source models</option>
+<option id="b" correct="true">Implementing comprehensive data governance and encryption</option>
+<option id="c" correct="false">Deploying models only in private clouds</option>
+<option id="d" correct="false">Limiting model accuracy to reduce privacy risks</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/compliance/latest/userguide/hipaa-compliance.html">HIPAA compliance requires robust data governance, encryption, access controls, and audit trails for protected health information.</explanation>
+</question>
+
+<question id="q018" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon service would be most appropriate for converting speech to text with domain-specific terminology?</text>
+<options>
+<option id="a" correct="false">Amazon Lex with custom intents</option>
+<option id="b" correct="true">Amazon Transcribe with custom language models</option>
+<option id="c" correct="false">Amazon Translate with custom dictionaries</option>
+<option id="d" correct="false">Amazon Comprehend with custom entities</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/transcribe/latest/dg/custom-language-models.html">Amazon Transcribe with custom language models improves accuracy for domain-specific speech recognition.</explanation>
+</question>
+
+<question id="q019" type="multiple-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>Which prompt engineering techniques can improve model performance? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Providing clear context and instructions</option>
+<option id="b" correct="true">Using examples to demonstrate desired output format</option>
+<option id="c" correct="false">Making prompts as brief as possible</option>
+<option id="d" correct="true">Iterative refinement based on model responses</option>
+<option id="e" correct="false">Using technical jargon to be more specific</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering.html">Effective prompting requires clear context, examples, and iterative refinement while avoiding unnecessary brevity or jargon.</explanation>
+</question>
+
+<question id="q020" type="single-choice" domain="Fundamentals of Generative AI" complexity="expert">
+<text>What is the primary purpose of the attention mechanism in transformer models?</text>
+<options>
+<option id="a" correct="false">To reduce computational complexity</option>
+<option id="b" correct="true">To focus on relevant parts of the input sequence</option>
+<option id="c" correct="false">To prevent overfitting during training</option>
+<option id="d" correct="false">To enable parallel processing of sequences</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Attention mechanisms allow models to focus on relevant parts of input sequences, improving context understanding.</explanation>
+</question>
+
+<question id="q021" type="single-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which approach best addresses algorithmic bias in machine learning models?</text>
+<options>
+<option id="a" correct="false">Using larger datasets automatically eliminates bias</option>
+<option id="b" correct="true">Implementing bias detection tools and diverse training data</option>
+<option id="c" correct="false">Focusing solely on model accuracy metrics</option>
+<option id="d" correct="false">Removing demographic information from training data</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html">Addressing bias requires proactive detection tools, diverse representative data, and fairness metrics beyond accuracy.</explanation>
+</question>
+
+<question id="q022" type="matching" domain="Security, Compliance, and Governance" complexity="expert">
+<text>Match the security concepts with their implementation in AWS AI services:</text>
+<left-items>
+<item id="l1">Data encryption</item>
+<item id="l2">Access control</item>
+<item id="l3">Audit logging</item>
+</left-items>
+<right-items>
+<item id="r1">AWS CloudTrail for API monitoring</item>
+<item id="r2">AWS KMS for key management</item>
+<item id="r3">IAM roles and policies</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r3"/>
+<match left-id="l3
+" right-id="r1"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/security.html">AWS KMS handles encryption, IAM manages access control, and CloudTrail provides audit logging.</explanation>
+</question>
+
+<question id="q023" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>When implementing RAG, which component is responsible for finding relevant information from the knowledge base?</text>
+<options>
+<option id="a" correct="false">The generation model</option>
+<option id="b" correct="true">The retrieval system</option>
+<option id="c" correct="false">The embedding model</option>
+<option id="d" correct="false">The prompt template</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html">The retrieval system searches and ranks relevant documents from the knowledge base based on query similarity.</explanation>
+</question>
+
+<question id="q024" type="single-choice" domain="Fundamentals of AI and ML" complexity="expert">
+<text>A company wants to identify custom labels in product images. Which combination of AWS services would be most appropriate?</text>
+<options>
+<option id="a" correct="false">Amazon Textract for image analysis and Amazon Comprehend for labeling</option>
+<option id="b" correct="true">Amazon Rekognition Custom Labels with labeled training images</option>
+<option id="c" correct="false">Amazon SageMaker with pre-built computer vision algorithms</option>
+<option id="d" correct="false">Amazon Bedrock with multimodal foundation models</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/what-is.html">Amazon Rekognition Custom Labels is specifically designed for training custom image classification models.</explanation>
+</question>
+
+<question id="q025" type="multiple-choice" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>Which characteristics define foundation models? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Pre-trained on large, diverse datasets</option>
+<option id="b" correct="true">Can be adapted for multiple downstream tasks</option>
+<option id="c" correct="false">Require minimal computational resources</option>
+<option id="d" correct="true">Demonstrate emergent capabilities at scale</option>
+<option id="e" correct="false">Are always open-source and freely available</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Foundation models are pre-trained on diverse data, adaptable to multiple tasks, and show emergent capabilities at scale.</explanation>
+</question>
+
+<question id="q026" type="single-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>What is the main advantage of using Amazon SageMaker JumpStart for foundation model deployment?</text>
+<options>
+<option id="a" correct="false">It provides free access to all foundation models</option>
+<option id="b" correct="true">It offers pre-configured environments and one-click deployment</option>
+<option id="c" correct="false">It automatically optimizes model performance</option>
+<option id="d" correct="false">It eliminates the need for prompt engineering</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html">SageMaker JumpStart provides pre-configured environments and simplified deployment for foundation models.</explanation>
+</question>
+
+<question id="q027" type="single-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which factor is most important when considering the environmental impact of AI models?</text>
+<options>
+<option id="a" correct="false">Model accuracy on benchmark datasets</option>
+<option id="b" correct="true">Computational efficiency and energy consumption</option>
+<option id="c" correct="false">Number of parameters in the model</option>
+<option id="d" correct="false">Training data size and diversity</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html">Environmental responsibility in AI focuses on computational efficiency and energy consumption during training and inference.</explanation>
+</question>
+
+<question id="q028" type="single-choice" domain="Security, Compliance, and Governance" complexity="expert">
+<text>A financial services company needs to ensure their AI models meet regulatory requirements for explainability. Which AWS service feature would be most helpful?</text>
+<options>
+<option id="a" correct="false">Amazon
+ SageMaker Autopilot</option>
+<option id="b" correct="true">Amazon SageMaker Clarify</option>
+<option id="c" correct="false">Amazon SageMaker Data Wrangler</option>
+<option id="d" correct="false">Amazon SageMaker Feature Store</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html">SageMaker Clarify provides model explainability features required for regulatory compliance in financial services.</explanation>
+</question>
+
+<question id="q029" type="multiple-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which data types are commonly used in machine learning? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Structured tabular data</option>
+<option id="b" correct="true">Unstructured text data</option>
+<option id="c" correct="true">Image and video data</option>
+<option id="d" correct="false">Encrypted binary data</option>
+<option id="e" correct="true">Time series data</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html">ML commonly uses structured, unstructured text, image/video, and time series data, but not encrypted binary data directly.</explanation>
+</question>
+
+<question id="q030" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>Which technique is most effective for adapting a foundation model to a specific domain without extensive retraining?</text>
+<options>
+<option id="a" correct="false">Complete model retraining from scratch</option>
+<option id="b" correct="true">Parameter-efficient fine-tuning methods</option>
+<option id="c" correct="false">Increasing model size and parameters</option>
+<option id="d" correct="false">Using only prompt engineering techniques</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html">Parameter-efficient fine-tuning methods like LoRA adapt models to specific domains with minimal computational overhead.</explanation>
+</question>
+
+<question id="q031" type="matching" domain="Fundamentals of Generative AI" complexity="expert">
+<text>Match the generative AI model types with their primary applications:</text>
+<left-items>
+<item id="l1">Large Language Models (LLMs)</item>
+<item id="l2">Diffusion Models</item>
+<item id="l3">Multimodal Models</item>
+</left-items>
+<right-items>
+<item id="r1">Image and video generation</item>
+<item id="r2">Text generation and understanding</item>
+<item id="r3">Cross-modal understanding and generation</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r1"/>
+<match left-id="l3" right-id="r3"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">LLMs handle text, diffusion models generate images/video, and multimodal models work across different data types.</explanation>
+</question>
+
+<question id="q032" type="single-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>What is the primary purpose of implementing AI governance frameworks in organizations?</text>
+<options>
+<option id="a" correct="false">To maximize AI model performance metrics</option>
+<option id="b" correct="true">To ensure ethical, legal, and responsible AI deployment</option>
+<option id="c" correct="false">To reduce computational costs of AI systems</option>
+<option id="d" correct="false">To accelerate AI development timelines</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-governance.html">AI governance frameworks ensure ethical, legal, and responsible deployment while managing risks and compliance.</explanation>
+</question>
+
+<question id="q033" type="single-choice" domain="Security, Compliance, and Governance" complexity="expert">
+<text>Which AWS service provides network isolation for SageMaker training jobs and inference endpoints?</text>
+<options>
+<option id="a" correct="false">AWS Direct Connect</option>
+<option id="b" correct="true">Amazon VPC (Virtual Private Cloud)</option>
+<option id="c" correct="false">AWS PrivateLink</option>
+<option id="d" correct="false">Amazon CloudFront</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/interface-vpc-
+endpoint.html">Amazon VPC provides network isolation for SageMaker resources, ensuring secure communication within private networks.</explanation>
+</question>
+
+<question id="q034" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>When implementing a RAG system, what is the purpose of chunking documents?</text>
+<options>
+<option id="a" correct="false">To reduce storage costs</option>
+<option id="b" correct="true">To improve retrieval accuracy and fit context windows</option>
+<option id="c" correct="false">To enable parallel processing</option>
+<option id="d" correct="false">To compress document content</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html">Chunking breaks documents into smaller segments to improve retrieval accuracy and ensure content fits within model context windows.</explanation>
+</question>
+
+<question id="q035" type="multiple-choice" domain="Fundamentals of AI and ML" complexity="expert">
+<text>Which evaluation metrics are appropriate for classification models? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Precision and Recall</option>
+<option id="b" correct="true">F1-Score</option>
+<option id="c" correct="false">Mean Squared Error (MSE)</option>
+<option id="d" correct="true">Area Under the ROC Curve (AUC-ROC)</option>
+<option id="e" correct="false">Mean Absolute Error (MAE)</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-validation.html">Classification models use precision, recall, F1-score, and AUC-ROC, while MSE and MAE are for regression models.</explanation>
+</question>
+
+<question id="q036" type="single-choice" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>What is the primary benefit of using pre-trained embeddings in natural language processing tasks?</text>
+<options>
+<option id="a" correct="false">They eliminate the need for training data</option>
+<option id="b" correct="true">They capture semantic relationships between words</option>
+<option id="c" correct="false">They reduce model inference time</option>
+<option id="d" correct="false">They automatically handle multiple languages</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/embeddings.html">Pre-trained embeddings capture semantic relationships and contextual meaning, improving NLP task performance.</explanation>
+</question>
+
+<question id="q037" type="single-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>A company wants to build a code generation assistant. Which type of foundation model would be most appropriate?</text>
+<options>
+<option id="a" correct="false">Image generation model</option>
+<option id="b" correct="true">Code-specialized language model</option>
+<option id="c" correct="false">General-purpose multimodal model</option>
+<option id="d" correct="false">Speech recognition model</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Code-specialized language models are trained on programming languages and are optimized for code generation tasks.</explanation>
+</question>
+
+<question id="q038" type="single-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which approach best ensures fairness across different demographic groups in AI models?</text>
+<options>
+<option id="a" correct="false">Using the same model for all groups</option>
+<option id="b" correct="true">Measuring and monitoring fairness metrics across groups</option>
+<option id="c" correct="false">Removing all demographic information from data</option>
+<option id="d" correct="false">Focusing only on overall model accuracy</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html">Fairness requires measuring and monitoring performance across different demographic groups using appropriate fairness metrics.</explanation>
+</question>
+
+<question id="q039" type="multiple-choice" domain="Security, Compliance, and Governance" complexity="expert">
+<text>Which data governance practices are essential for AI systems? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Data quality assessment and monitoring</option>
+<option id="b" correct="true">Data lineage tracking and documentation</option>
+<option id="c" correct="false">Unlimited data retention
+ policies</option>
+<option id="d" correct="true">Privacy-preserving data processing techniques</option>
+<option id="e" correct="true">Regular data access audits</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/data-governance.html">Data governance requires quality monitoring, lineage tracking, privacy preservation, and access audits, not unlimited retention.</explanation>
+</question>
+
+<question id="q040" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon service would be most appropriate for extracting insights from customer reviews and feedback?</text>
+<options>
+<option id="a" correct="false">Amazon Rekognition</option>
+<option id="b" correct="true">Amazon Comprehend</option>
+<option id="c" correct="false">Amazon Transcribe</option>
+<option id="d" correct="false">Amazon Translate</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html">Amazon Comprehend provides natural language processing capabilities for sentiment analysis and entity extraction from text.</explanation>
+</question>
+
+<question id="q041" type="single-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>What is the main challenge when deploying large foundation models in production environments?</text>
+<options>
+<option id="a" correct="false">Limited model accuracy</option>
+<option id="b" correct="true">High computational and memory requirements</option>
+<option id="c" correct="false">Lack of available training data</option>
+<option id="d" correct="false">Insufficient model interpretability</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/large-model-inference.html">Large foundation models require significant computational resources and memory, making deployment challenging and expensive.</explanation>
+</question>
+
+<question id="q042" type="matching" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>Match the fine-tuning approaches with their characteristics:</text>
+<left-items>
+<item id="l1">Full fine-tuning</item>
+<item id="l2">Parameter-efficient fine-tuning</item>
+<item id="l3">Instruction tuning</item>
+</left-items>
+<right-items>
+<item id="r1">Updates only a small subset of parameters</item>
+<item id="r2">Trains models to follow specific instructions</item>
+<item id="r3">Updates all model parameters</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r3"/>
+<match left-id="l2" right-id="r1"/>
+<match left-id="l3" right-id="r2"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html">Full fine-tuning updates all parameters, parameter-efficient methods update few parameters, and instruction tuning teaches following instructions.</explanation>
+</question>
+
+<question id="q043" type="single-choice" domain="Guidelines for Responsible AI" complexity="expert">
+<text>Which principle is most important when developing AI systems that impact human decision-making?</text>
+<options>
+<option id="a" correct="false">Maximizing automation to reduce human involvement</option>
+<option id="b" correct="true">Ensuring transparency and explainability of AI decisions</option>
+<option id="c" correct="false">Prioritizing speed of decision-making over accuracy</option>
+<option id="d" correct="false">Minimizing computational costs regardless of outcomes</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html">Transparency and explainability are crucial when AI systems impact human decisions, enabling accountability and trust.</explanation>
+</question>
+
+<question id="q044" type="single-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>Which AWS service helps monitor and detect anomalies in machine learning model performance over time?</text>
+<options>
+<option id="a" correct="false">AWS Config</option>
+<option id="b" correct="true">Amazon SageMaker Model Monitor</option>
+<option id="c" correct="false">Amazon CloudWatch</option>
+<option id="d" correct="false">AWS Systems Manager</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html">SageMaker Model Monitor continuously monitors ML models for data drift, model quality, and bias drift in production.</explanation>
+</question>
+
+<question id="q045" type="multiple-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>
+Which factors affect the quality of generated content from foundation models? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Quality and specificity of input prompts</option>
+<option id="b" correct="true">Model temperature and sampling parameters</option>
+<option id="c" correct="false">Size of the training dataset only</option>
+<option id="d" correct="true">Context window size and content</option>
+<option id="e" correct="true">Model architecture and training methodology</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/inference-parameters.html">Content quality depends on prompt quality, sampling parameters, context window, and model architecture, not just training data size.</explanation>
+</question>
+
+<question id="q046" type="single-choice" domain="Fundamentals of AI and ML" complexity="expert">
+<text>A company needs to process real-time streaming data for fraud detection. Which type of machine learning inference would be most appropriate?</text>
+<options>
+<option id="a" correct="false">Batch inference</option>
+<option id="b" correct="true">Real-time inference</option>
+<option id="c" correct="false">Offline inference</option>
+<option id="d" correct="false">Scheduled inference</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html">Real-time inference is required for fraud detection to make immediate decisions on streaming transaction data.</explanation>
+</question>
+
+<question id="q047" type="single-choice" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>What is the primary purpose of tokenization in natural language processing?</text>
+<options>
+<option id="a" correct="false">To encrypt sensitive text data</option>
+<option id="b" correct="true">To convert text into numerical representations for model processing</option>
+<option id="c" correct="false">To compress text data for storage</option>
+<option id="d" correct="false">To translate text between languages</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Tokenization converts text into numerical tokens that machine learning models can process and understand.</explanation>
+</question>
+
+<question id="q048" type="single-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>When implementing a multi-turn conversational AI system, which approach helps maintain context across interactions?</text>
+<options>
+<option id="a" correct="false">Processing each turn independently</option>
+<option id="b" correct="true">Maintaining conversation history in the context window</option>
+<option id="c" correct="false">Using separate models for each turn</option>
+<option id="d" correct="false">Resetting the model state after each response</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html">Multi-turn conversations require maintaining conversation history within the model&apos;s context window to preserve context.</explanation>
+</question>
+
+<question id="q049" type="multiple-choice" domain="Guidelines for Responsible AI" complexity="expert">
+<text>Which practices help ensure responsible deployment of generative AI systems? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Implementing content filtering and safety guardrails</option>
+<option id="b" correct="true">Regular monitoring for harmful or biased outputs</option>
+<option id="c" correct="false">Maximizing model capabilities without restrictions</option>
+<option id="d" correct="true">Providing clear disclosure when AI is involved</option>
+<option id="e" correct="true">Establishing human oversight and intervention mechanisms</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html">Responsible deployment requires safety guardrails, monitoring, disclosure, and human oversight, not unrestricted capabilities.</explanation>
+</question>
+
+<question id="q050" type="single-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>Which approach best protects sensitive data when training machine learning models?</text>
+<options>
+<option id="a" correct="false">Using only public datasets</option>
+<option id="b" correct="true">Implementing differential privacy and data anonymization</option>
+<option id="c" correct="false">Training models on unencrypted data</option>
+<option
+ id="d" correct="false">Sharing raw data across all team members</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/privacy.html">Differential privacy and data anonymization protect sensitive information while enabling effective model training.</explanation>
+</question>
+
+<question id="q051" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon service would be most appropriate for building a voice-enabled customer service bot?</text>
+<options>
+<option id="a" correct="true">Amazon Lex</option>
+<option id="b" correct="false">Amazon Polly</option>
+<option id="c" correct="false">Amazon Transcribe</option>
+<option id="d" correct="false">Amazon Comprehend</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/lex/latest/dg/what-is.html">Amazon Lex provides conversational AI capabilities for building voice and text chatbots with natural language understanding.</explanation>
+</question>
+
+<question id="q052" type="matching" domain="Applications of Foundation Models" complexity="expert">
+<text>Match the model optimization techniques with their primary benefits:</text>
+<left-items>
+<item id="l1">Model quantization</item>
+<item id="l2">Model pruning</item>
+<item id="l3">Knowledge distillation</item>
+</left-items>
+<right-items>
+<item id="r1">Reduces model size by removing unnecessary parameters</item>
+<item id="r2">Creates smaller models that mimic larger ones</item>
+<item id="r3">Reduces precision of model weights</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r3"/>
+<match left-id="l2" right-id="r1"/>
+<match left-id="l3" right-id="r2"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-optimization.html">Quantization reduces weight precision, pruning removes parameters, and distillation creates smaller mimicking models.</explanation>
+</question>
+
+<question id="q053" type="single-choice" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>What is the main advantage of using vector databases for storing embeddings in RAG systems?</text>
+<options>
+<option id="a" correct="false">Lower storage costs compared to traditional databases</option>
+<option id="b" correct="true">Efficient similarity search and retrieval capabilities</option>
+<option id="c" correct="false">Better data compression ratios</option>
+<option id="d" correct="false">Automatic data backup and recovery</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html">Vector databases enable efficient similarity search using cosine similarity and other distance metrics for embedding retrieval.</explanation>
+</question>
+
+<question id="q054" type="single-choice" domain="Guidelines for Responsible AI" complexity="expert">
+<text>Which consideration is most important when deploying AI systems in regulated industries like healthcare or finance?</text>
+<options>
+<option id="a" correct="false">Maximizing model performance metrics</option>
+<option id="b" correct="true">Ensuring compliance with industry-specific regulations</option>
+<option id="c" correct="false">Minimizing development and deployment costs</option>
+<option id="d" correct="false">Using the latest AI technologies available</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/compliance/latest/userguide/compliance-programs.html">Regulated industries require strict compliance with industry-specific regulations, often prioritizing safety and transparency over performance.</explanation>
+</question>
+
+<question id="q055" type="multiple-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>Which AWS services help implement comprehensive AI governance? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">AWS CloudTrail for audit logging</option>
+<option id="b" correct="true">Amazon SageMaker Model Registry for model versioning</option>
+<option id="c" correct="false">Amazon S3 for data storage only</option>
+<option id="d" correct="true">AWS IAM for access control</option>
+<option id="e" correct="true">Amazon SageMaker Clarify for bias detection</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-governance.html">AI governance requires audit logging, model versioning, access control, and bias detection, beyond just data storage.</explanation>
+</question>
+
+<question id="q056" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>
+When fine-tuning a foundation model, what is the primary risk of using too small a learning rate?</text>
+<options>
+<option id="a" correct="false">The model will overfit to training data</option>
+<option id="b" correct="true">The model may not learn effectively or converge slowly</option>
+<option id="c" correct="false">The model will generate inconsistent outputs</option>
+<option id="d" correct="false">The model will require more memory</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html">Too small learning rates can prevent effective learning and cause very slow convergence during fine-tuning.</explanation>
+</question>
+
+<question id="q057" type="single-choice" domain="Fundamentals of AI and ML" complexity="expert">
+<text>A company wants to predict customer lifetime value using historical transaction data. Which type of machine learning problem is this?</text>
+<options>
+<option id="a" correct="false">Classification</option>
+<option id="b" correct="true">Regression</option>
+<option id="c" correct="false">Clustering</option>
+<option id="d" correct="false">Reinforcement learning</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html">Predicting customer lifetime value involves predicting a continuous numerical value, making it a regression problem.</explanation>
+</question>
+
+<question id="q058" type="single-choice" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>What is the primary purpose of the decoder component in transformer-based language models?</text>
+<options>
+<option id="a" correct="false">To encode input sequences into representations</option>
+<option id="b" correct="true">To generate output sequences token by token</option>
+<option id="c" correct="false">To calculate attention weights</option>
+<option id="d" correct="false">To normalize input embeddings</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">The decoder component in transformers generates output sequences autoregressively, one token at a time.</explanation>
+</question>
+
+<question id="q059" type="multiple-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>Which strategies can improve the performance of RAG systems? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Optimizing document chunking strategies</option>
+<option id="b" correct="true">Using high-quality embedding models</option>
+<option id="c" correct="false">Increasing the size of the generation model only</option>
+<option id="d" correct="true">Implementing hybrid search combining dense and sparse retrieval</option>
+<option id="e" correct="true">Fine-tuning retrieval components on domain data</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html">RAG performance improves through better chunking, embeddings, hybrid search, and domain fine-tuning, not just larger models.</explanation>
+</question>
+
+<question id="q060" type="single-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which approach best addresses the challenge of AI model interpretability in critical applications?</text>
+<options>
+<option id="a" correct="false">Using only simple linear models</option>
+<option id="b" correct="true">Implementing explainable AI techniques and model documentation</option>
+<option id="c" correct="false">Avoiding AI altogether in critical applications</option>
+<option id="d" correct="false">Relying solely on model accuracy metrics</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html">Interpretability requires explainable AI techniques, comprehensive documentation, and transparency methods beyond simple models.</explanation>
+</question>
+
+<question id="q061" type="single-choice" domain="Security, Compliance, and Governance" complexity="expert">
+<text>When implementing federated learning for sensitive data, what is the primary security benefit?</text>
+<options>
+<option id="a" correct="false">Faster model training compared to centralized approaches</option>
+<option id="b" correct="true">Data remains distribute
+d and never leaves local environments</option>
+<option id="c" correct="false">Lower computational requirements for training</option>
+<option id="d" correct="false">Automatic encryption of all communications</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html">Federated learning&apos;s main security benefit is keeping sensitive data distributed across local environments without centralization.</explanation>
+</question>
+
+<question id="q062" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon service would be most appropriate for converting text to speech with natural-sounding voices?</text>
+<options>
+<option id="a" correct="false">Amazon Transcribe</option>
+<option id="b" correct="true">Amazon Polly</option>
+<option id="c" correct="false">Amazon Lex</option>
+<option id="d" correct="false">Amazon Translate</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/polly/latest/dg/what-is.html">Amazon Polly converts text into lifelike speech using advanced deep learning technologies.</explanation>
+</question>
+
+<question id="q063" type="matching" domain="Applications of Foundation Models" complexity="advanced">
+<text>Match the inference optimization techniques with their use cases:</text>
+<left-items>
+<item id="l1">Batch inference</item>
+<item id="l2">Real-time inference</item>
+<item id="l3">Serverless inference</item>
+</left-items>
+<right-items>
+<item id="r1">Interactive applications requiring immediate responses</item>
+<item id="r2">Intermittent workloads with variable traffic</item>
+<item id="r3">Processing large datasets offline</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r3"/>
+<match left-id="l2" right-id="r1"/>
+<match left-id="l3" right-id="r2"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/inference-options.html">Batch inference processes large datasets, real-time serves interactive apps, and serverless handles variable workloads.</explanation>
+</question>
+
+<question id="q064" type="single-choice" domain="Fundamentals of Generative AI" complexity="expert">
+<text>What is the main challenge when scaling transformer models to handle longer input sequences?</text>
+<options>
+<option id="a" correct="false">Linear increase in memory requirements</option>
+<option id="b" correct="true">Quadratic increase in computational complexity due to attention</option>
+<option id="c" correct="false">Exponential increase in training time</option>
+<option id="d" correct="false">Decreased model accuracy with longer sequences</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Transformer attention mechanisms have quadratic complexity with sequence length, making longer sequences computationally expensive.</explanation>
+</question>
+
+<question id="q065" type="single-choice" domain="Guidelines for Responsible AI" complexity="expert">
+<text>Which principle should guide the development of AI systems that may impact employment and workforce dynamics?</text>
+<options>
+<option id="a" correct="false">Maximizing automation to reduce labor costs</option>
+<option id="b" correct="true">Considering societal impact and supporting workforce transition</option>
+<option id="c" correct="false">Prioritizing technological advancement over social considerations</option>
+<option id="d" correct="false">Implementing AI without stakeholder consultation</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/responsible-ai.html">Responsible AI development considers societal impact, including workforce effects, and supports transition and reskilling efforts.</explanation>
+</question>
+
+</quiz>

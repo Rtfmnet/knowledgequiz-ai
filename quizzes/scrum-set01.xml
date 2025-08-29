@@ -1,0 +1,180 @@
+<quiz>
+<metadata>
+<title>Scrum Quiz</title>
+<info>
+<knowledge-area>Scrum</knowledge-area>
+<total-questions>14</total-questions>
+<model>Claude</model>
+<temperature>0</temperature>
+</info>
+</metadata>
+
+<question id="q001" type="single-choice" domain="Team Facilitation" complexity="advanced">
+<text>During Sprint Planning, two team members engage in a heated technical debate that consumes 30 minutes of the timebox. Other team members become disengaged. As Scrum Master, what is your most effective immediate intervention?</text>
+<options>
+<option id="a" correct="false">Allow the debate to continue since technical discussions are valuable for the team</option>
+<option id="b" correct="true">Acknowledge both perspectives, park the technical details for a separate discussion, and refocus on Sprint Planning objectives</option>
+<option id="c" correct="false">Ask the Product Owner to make the technical decision to move forward</option>
+<option id="d" correct="false">Take a 15-minute break to allow emotions to cool down</option>
+</options>
+<explanation>Effective facilitation requires protecting the timebox while honoring team members&apos; contributions. Parking complex technical debates for focused sessions maintains Sprint Planning&apos;s purpose while ensuring important discussions happen appropriately. Reference: Professional Scrum Master training materials.</explanation>
+</question>
+
+<question id="q002" type="multiple-choice" domain="Impediment Removal" complexity="advanced">
+<text>A team reports that their development environment crashes frequently, causing 2-3 hours of lost productivity daily. The IT department says fixing it will take 6 weeks. Which actions should the Scrum Master take?</text>
+<options>
+<option id="a" correct="true">Escalate to leadership with data showing business impact of the impediment</option>
+<option id="b" correct="false">Advise the team to work around the crashes and continue with current Sprint commitments</option>
+<option id="c" correct="true">Help the team explore temporary mitigation strategies while pursuing long-term resolution</option>
+<option id="d" correct="true">Work with IT to understand dependencies and explore expediting the fix</option>
+<option id="e" correct="false">Adjust Sprint Goals to account for the reduced productivity until the fix is complete</option>
+</options>
+<explanation>Systemic impediments require multi-pronged approaches: escalation with impact data, collaboration with stakeholders for solutions, and temporary mitigations. Adjusting goals without addressing root causes enables poor organizational performance. Reference: Scrum Guide - Scrum Master accountabilities.</explanation>
+</question>
+
+<question id="q003" type="single-choice" domain="Product Owner Coaching" complexity="advanced">
+<text>The Product Owner frequently accepts user stories as &quot;Done&quot; even when they don&apos;t meet the Definition of Done, citing business pressure to show progress. How should the Scrum Master address this pattern?</text>
+<options>
+<option id="a" correct="false">Support the Product Owner&apos;s business priorities and help communicate progress to stakeholders</option>
+<option id="b" correct="true">Coach the Product Owner on the risks of technical debt and help them communicate realistic progress to stakeholders</option>
+<option id="c" correct="false">Implement a peer review process where other team members validate completion</option>
+<option id="d" correct="false">Escalate to the Product Owner&apos;s manager about the quality concerns</option>
+</options>
+<explanation>The Scrum Master serves the Product Owner by helping them understand the long-term consequences of compromising quality standards and developing better stakeholder communication strategies. This maintains product integrity while addressing business pressures constructively.</explanation>
+</question>
+
+<question id="q004" type="matching" domain="Stakeholder Management" complexity="expert">
+<text>Match each stakeholder management challenge with the most effective Scrum Master coaching approach:</text>
+<left-items>
+<item id="l1">Executive demands detailed project timelines with fixed dates</item>
+<item id="l2">Department manager bypasses Product Owner with direct feature requests</item>
+<item id="l3">Business analyst insists on comprehensive upfront documentation</item>
+<item id="l4">QA manager wants separate testing phase after development</item>
+</left-items>
+<right-items>
+<item id="r1">Coach on integrated quality practices and Definition of Done implementation</item>
+<item id="r2">Educate on probabilistic forecasting and empirical planning approaches</item>
+<item id="r3">Facilitate role clarity sessions and reinforce Product Owner accountability</item>
+<item id="r4">Guide toward collaborative documentation and just-in-time information sharing</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r3"/>
+<match left-id="l3" right-id="r4"/>
+<match left-id="l4" right-id="r1"/>
+</correct-matches>
+<explanation>Each stakeholder challenge requires targeted education: forecasting methods for planning concerns, role clarification for process bypassing, collaborative practices for documentation needs, and integrated quality approaches for testing concerns. Reference: Professional Scrum Master II training materials.</explanation>
+</question>
+
+<question id="q005" type="single-choice" domain="Team Dynamics" complexity="advanced">
+<text>A high-performing team member consistently interrupts others during Daily Scrums and dominates technical discussions. The behavior is affecting team morale. What should the Scrum Master do first?</text>
+<options>
+<option id="a" correct="true">Have a private conversation with the individual to raise awareness of the impact and explore solutions</option>
+<option id="b" correct="false">Address the behavior publicly during the next Daily Scrum to set boundaries</option>
+<option id="c" correct="false">Implement strict speaking time limits for all team members</option>
+<option id="d" correct="false">Discuss the situation with the team during the next retrospective</option>
+</options>
+<explanation>Individual coaching conversations allow for private feedback and collaborative solution-finding without embarrassing the team member or immediately implementing restrictive processes. This approach honors the person while addressing the impact on team dynamics.</explanation>
+</question>
+
+<question id="q006" type="single-choice" domain="Metrics and Measurement" complexity="advanced">
+<text>Your organization asks for team productivity metrics to compare Scrum teams. Leadership wants to use velocity and story points to identify high and low performers. How should the Scrum Master respond?</text>
+<options>
+<option id="a" correct="false">Provide the requested metrics since transparency is a Scrum value</option>
+<option id="b" correct="true">Educate leadership on why comparative metrics can be harmful and suggest team-specific improvement metrics instead</option>
+<option id="c" correct="false">Normalize story points across teams to make comparisons more accurate</option>
+<option id="d" correct="false">Recommend using different metrics like code commits or hours worked</option>
+</options>
+<explanation>Comparative metrics between teams can create dysfunctional competition and gaming behaviors. The Scrum Master should educate stakeholders on appropriate metric usage while suggesting team-specific improvement indicators that support continuous improvement without harmful comparisons.</explanation>
+</question>
+
+<question id="q007" type="single-choice" domain="Continuous Improvement" complexity="intermediate">
+<text>For three consecutive retrospectives, the team has identified the same impediment but made no progress addressing it. The team seems frustrated. What should the Scrum Master do?</text>
+<options>
+<option id="a" correct="false">Suggest the team focus on impediments they can control instead</option>
+<option id="b" correct="true">Take ownership of the impediment and work to remove it between retrospectives</option>
+<option id="c" correct="false">Facilitate a deeper root cause analysis during the next retrospective</option>
+<option id="d" correct="false">Recommend the team adapt their process to work around the impediment</option>
+</options>
+<explanation>When teams repeatedly identify impediments they cannot remove themselves, the Scrum Master should take active ownership of removal. This demonstrates accountability and prevents team frustration from recurring unresolved issues.</explanation>
+</question>
+
+<question id="q008" type="single-choice" domain="Conflict Resolution" complexity="advanced">
+<text>Two team members have a personal conflict that is affecting their collaboration on shared code components. They avoid working together and their animosity is noticed by the rest of the team. What approach should the Scrum Master take?</text>
+<options>
+<option id="a" correct="false">Reassign work to prevent the two members from needing to collaborate</option>
+<option id="b" correct="true">Facilitate a structured conversation between the individuals to address the conflict professionally</option>
+<option id="c" correct="false">Address the conflict during the team retrospective to get everyone&apos;s input</option>
+<option id="d" correct="false">Escalate to HR since it&apos;s a personal matter outside of Scrum Master responsibilities</option>
+</options>
+<explanation>Professional conflicts affecting team collaboration fall within Scrum Master responsibilities for team effectiveness. Structured facilitation can help individuals separate personal issues from professional collaboration needs while maintaining team dynamics.</explanation>
+</question>
+
+<question id="q009" type="single-choice" domain="Product Backlog Coaching" complexity="advanced">
+<text>The Product Owner creates very detailed user stories with comprehensive acceptance criteria, but the team complains about lack of creativity and ownership in their work. How should the Scrum Master coach the Product Owner?</text>
+<options>
+<option id="a" correct="true">Help the Product Owner understand the value of outcome-focused stories that allow team creativity in solution design</option>
+<option id="b" correct="false">Support the Product Owner&apos;s detailed approach since it provides clear requirements</option>
+<option id="c" correct="false">Suggest the Product Owner work directly with each developer to customize story details</option>
+<option id="d" correct="false">Recommend the team ignore some acceptance criteria to maintain creativity</option>
+</options>
+<explanation>Over-specification can reduce team engagement and innovation. Coaching the Product Owner toward outcome-focused stories allows teams to contribute solution creativity while ensuring business needs are met. This improves both engagement and solution quality.</explanation>
+</question>
+
+<question id="q010" type="multiple-choice" domain="Sprint Execution" complexity="advanced">
+<text>During a Sprint, the team discovers that completing their committed work requires integrating with a system they don&apos;t have access to. The system owner is unresponsive. What actions should the Scrum Master take?</text>
+<options>
+<option id="a" correct="true">Immediately work to resolve the access issue through appropriate organizational channels</option>
+<option id="b" correct="false">Advise the team to continue other work and address this in the next Sprint</option>
+<option id="c" correct="true">Help the team explore alternative approaches or mock implementations for testing</option>
+<option id="d" correct="true">Document this as a dependency risk for future Sprint Planning discussions</option>
+<option id="e" correct="false">Extend the Sprint timeline to account for the delay</option>
+</options>
+<explanation>Active impediment removal requires immediate action on access issues, helping teams find alternatives, and capturing lessons for future planning. Sprint timeboxes should remain fixed while the team adapts their approach within the constraint.</explanation>
+</question>
+
+<question id="q011" type="single-choice" domain="Definition of Done" complexity="intermediate">
+<text>Your team&apos;s Definition of Done includes automated testing, but developers frequently skip tests when Sprint deadlines approach. The Product Owner is satisfied with delivered features. What should the Scrum Master address first?</text>
+<options>
+<option id="a" correct="false">Update the Definition of Done to make testing optional during time pressure</option>
+<option id="b" correct="true">Help the team understand the long-term impact of skipping tests on quality and velocity</option>
+<option id="c" correct="false">Support the team&apos;s pragmatic approach since the Product Owner is satisfied</option>
+<option id="d" correct="false">Implement automated checks that prevent code deployment without tests</option>
+</options>
+<explanation>The Scrum Master should help the team understand that Definition of Done represents minimum quality standards essential for sustainable development. Education about long-term consequences helps teams make informed decisions about practices that affect their future effectiveness.</explanation>
+</question>
+
+<question id="q012" type="single-choice" domain="Daily Scrum Facilitation" complexity="advanced">
+<text>Team members consistently report status updates during Daily Scrums rather than discussing collaboration and impediments. Despite coaching, the pattern continues. What intervention might be most effective?</text>
+<options>
+<option id="a" correct="false">Implement a strict format requiring each person to answer the three traditional questions</option>
+<option id="b" correct="true">Experiment with walking the board or focusing discussions on Sprint Goal progress rather than individual updates</option>
+<option id="c" correct="false">Reduce Daily Scrum frequency to every other day to make them more meaningful</option>
+<option id="d" correct="false">Have team members submit written updates before the meeting to focus discussion time</option>
+</options>
+<explanation>Alternative Daily Scrum formats like walking the board or focusing on Sprint Goal progress can shift the conversation from individual status to collaborative work and impediment identification. Experimentation helps teams find formats that serve their collaboration needs.</explanation>
+</question>
+
+<question id="q013" type="single-choice" domain="Empirical Process Control" complexity="advanced">
+<text>Your team completes most Sprint Backlog items but consistently struggles to achieve their Sprint Goal. Stakeholders focus on completed story points rather than goal achievement. How should the Scrum Master address this?</text>
+<options>
+<option id="a" correct="false">Help the team improve their Sprint Planning to better align items with the Sprint Goal</option>
+<option id="b" correct="true">Educate stakeholders on the importance of Sprint Goals and guide discussions toward outcome achievement rather than output completion</option>
+<option id="c" correct="false">Recommend the team set more achievable Sprint Goals to ensure success</option>
+<option id="d" correct="false">Suggest tracking both story points and goal achievement to satisfy all stakeholders</option>
+</options>
+<explanation>This scenario indicates a fundamental misunderstanding of Sprint Goals&apos; purpose. The Scrum Master should educate stakeholders on outcome-focused thinking while helping teams improve goal-oriented planning. Focus should shift from output metrics to outcome achievement.</explanation>
+</question>
+
+<question id="q014" type="single-choice" domain="Team Performance Coaching" complexity="advanced">
+<text>A team member privately expresses frustration about feeling undervalued because their non-coding contributions (testing, documentation, design) aren&apos;t recognized during Sprint Reviews. How should the Scrum Master respond?</text>
+<options>
+<option id="a" correct="false">Suggest the team member focus more on coding tasks to gain recognition</option>
+<option id="b" correct="true">Work with the team to improve how they demonstrate all aspects of their work during Sprint Reviews</option>
+<option id="c" correct="false">Have a private conversation with other team members about recognizing diverse contributions</option>
+<option id="d" correct="false">Recommend the team member discuss this during the next retrospective</option>
+</options>
+<explanation>The Scrum Master should address systemic issues affecting team member engagement. Improving Sprint Review demonstrations to showcase all contributions helps the entire team better communicate their collaborative work while addressing the individual&apos;s concern about recognition.</explanation>
+</question>
+
+</quiz>

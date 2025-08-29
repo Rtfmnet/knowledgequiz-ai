@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<metadata>
+<title>AWS Certified AI Practitioner Survey Quiz</title>
+<info>
+<knowledge-area>AWS Certified AI Practitioner Exam</knowledge-area>
+<total-questions>65</total-questions>
+<model>Claude 3.5 Sonnet</model>
+<temperature>0.75</temperature>
+</info>
+
+</metadata>
+
+<question id="q001" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon service is specifically
+ designed for extracting text and data from scanned documents and forms?</text>
+<options>
+<option id="a" correct="false">Amazon Comprehend</option>
+<option id="b" correct="true">Amazon Textract</option>
+<option id="c" correct="false">Amazon Rekognition</option>
+<option id="d" correct="false">Amazon Transcribe</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/textract/latest/dg/what-is.html">Amazon Textract automatically extracts text and data from scanned documents, including forms and tables.</explanation>
+</question>
+
+<question id="q002" type="multiple-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>Which factors should be considered when choosing between different foundation model customization approaches? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Cost tradeoffs between pre-training and fine-tuning</option>
+<option id="b" correct="true">Time requirements for model adaptation</option>
+<option id="c" correct="false">Model architecture complexity only</option>
+<option id="d" correct="true">Available training data quality and quantity</option>
+<option id="e" correct="true">Inference latency requirements</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html">Customization approach selection requires considering cost, time, data availability, and performance requirements.</explanation>
+</question>
+
+<question id="q003" type="single-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>A company needs to ensure their ML models comply with audit requirements. Which AWS service provides centralized audit and compliance management?</text>
+<options>
+<option id="a" correct="false">AWS Config</option>
+<option id="b" correct="true">AWS Audit Manager</option>
+<option id="c" correct="false">Amazon Inspector</option>
+<option id="d" correct="false">AWS Systems Manager</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html">AWS Audit Manager helps automate audit preparation and provides centralized compliance management.</explanation>
+</question>
+
+<question id="q004" type="matching" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Match the machine learning algorithm types with their primary characteristics:</text>
+<left-items>
+<item id="l1">XGBoost</item>
+<item id="l2">Random Forest</item>
+<item id="l3">Principal Component Analysis</item>
+</left-items>
+<right-items>
+<item id="r1">Dimensionality reduction technique</item>
+<item id="r2">Gradient boosting framework</item>
+<item id="r3">Ensemble of decision trees</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r3"/>
+<match left-id="l3" right-id="r1"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html">XGBoost uses gradient boosting, Random Forest combines decision trees, and PCA reduces dimensions.</explanation>
+</question>
+
+<question id="q005" type="single-choice" domain="Fundamentals of Generative AI" complexity="expert">
+<text>What is the primary advantage of using AWS Inferentia chips for deep learning inference workloads?</text>
+<options>
+<option id="a" correct="false">Higher memory capacity than GPU instances</option>
+<option id="b" correct="true">Optimized performance at lower cost for inference</option>
+<option id="c" correct="false">Better support for training large models</option>
+<option id="d" correct="false">Automatic model optimization capabilities</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/inferentia/latest/devguide/what-is-inferentia.html">AWS Inferentia chips are specifically designed to deliver high performance at the lowest cost for deep learning inference.</explanation>
+</question>
+
+<question id="q006" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>When implementing a document question-answering system, which
+ approach would provide the most accurate and traceable responses?</text>
+<options>
+<option id="a" correct="false">Fine-tuning a language model on all documents</option>
+<option id="b" correct="true">Implementing RAG with document chunking and citation</option>
+<option id="c" correct="false">Using prompt engineering with entire documents</option>
+<option id="d" correct="false">Training a custom transformer from scratch</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html">RAG provides accurate responses with source attribution and allows dynamic document updates without retraining.</explanation>
+</question>
+
+<question id="q007" type="multiple-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which data governance strategies are essential for responsible AI development? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Data quality and integrity monitoring</option>
+<option id="b" correct="true">Data protection and privacy measures</option>
+<option id="c" correct="false">Unlimited data collection and retention</option>
+<option id="d" correct="true">Data lifecycle management policies</option>
+<option id="e" correct="true">Regular data validation and profiling</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/data-governance.html">Responsible AI requires quality monitoring, privacy protection, lifecycle management, and validation, not unlimited collection.</explanation>
+</question>
+
+<question id="q008" type="single-choice" domain="Fundamentals of AI and ML" complexity="expert">
+<text>A retail company wants to group customers based on purchasing behavior without predefined categories. Which type of machine learning approach is most appropriate?</text>
+<options>
+<option id="a" correct="false">Supervised classification</option>
+<option id="b" correct="true">Unsupervised clustering</option>
+<option id="c" correct="false">Reinforcement learning</option>
+<option id="d" correct="false">Semi-supervised learning</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/k-means.html">Unsupervised clustering algorithms like K-means group data points without predefined labels or categories.</explanation>
+</question>
+
+<question id="q009" type="single-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>Which AWS service provides cost optimization recommendations specifically for machine learning workloads?</text>
+<options>
+<option id="a" correct="true">AWS Trusted Advisor</option>
+<option id="b" correct="false">AWS Cost Explorer</option>
+<option id="c" correct="false">AWS Budgets</option>
+<option id="d" correct="false">AWS Billing Dashboard</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/support/latest/user/trusted-advisor.html">AWS Trusted Advisor provides recommendations to optimize costs, performance, security, and resilience across AWS services.</explanation>
+</question>
+
+<question id="q010" type="single-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>What is the main benefit of using parameter-efficient fine-tuning methods like LoRA compared to full fine-tuning?</text>
+<options>
+<option id="a" correct="false">Higher model accuracy on downstream tasks</option>
+<option id="b" correct="true">Reduced computational resources and faster training</option>
+<option id="c" correct="false">Better generalization to unseen data</option>
+<option id="d" correct="false">Improved model interpretability</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html">Parameter-efficient methods update only a small subset of parameters, requiring less computation and memory.</explanation>
+</question>
+
+<question id="q011" type="matching" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>Match the generative AI techniques with their primary purposes:</text>
+<left-items>
+<item id="l1">Data augmentation</item>
+<item id="l2">Normalization</item>
+<item id="l3">Feature selection</item>
+</left-items>
+<right-items>
+<item id="r1">Choosing
+ relevant features for training</item>
+<item id="r2">Generating new training instances</item>
+<item id="r3">Adjusting data to common scales</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r3"/>
+<match left-id="l3" right-id="r1"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/data-prep.html">Data augmentation creates new instances, normalization scales data, and feature selection chooses relevant attributes.</explanation>
+</question>
+
+<question id="q012" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon SageMaker feature is specifically designed for automated feature engineering and model creation?</text>
+<options>
+<option id="a" correct="false">SageMaker Data Wrangler</option>
+<option id="b" correct="true">SageMaker Autopilot</option>
+<option id="c" correct="false">SageMaker Feature Store</option>
+<option id="d" correct="false">SageMaker Model Monitor</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automl.html">SageMaker Autopilot automatically performs feature engineering, algorithm selection, and hyperparameter tuning.</explanation>
+</question>
+
+<question id="q013" type="multiple-choice" domain="Security, Compliance, and Governance" complexity="expert">
+<text>Which approaches help ensure data privacy in machine learning workflows? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Implementing differential privacy techniques</option>
+<option id="b" correct="true">Using federated learning approaches</option>
+<option id="c" correct="false">Storing all data in public repositories</option>
+<option id="d" correct="true">Applying data anonymization methods</option>
+<option id="e" correct="true">Encrypting data in transit and at rest</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/privacy.html">Privacy protection requires differential privacy, federated learning, anonymization, and encryption, not public storage.</explanation>
+</question>
+
+<question id="q014" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>When deploying foundation models for production use, which deployment option provides automatic scaling with pay-per-request pricing?</text>
+<options>
+<option id="a" correct="false">Real-time endpoints</option>
+<option id="b" correct="true">Serverless endpoints</option>
+<option id="c" correct="false">Batch transform jobs</option>
+<option id="d" correct="false">Multi-model endpoints</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints.html">Serverless endpoints provide automatic scaling and pay-per-request pricing for variable workloads.</explanation>
+</question>
+
+<question id="q015" type="single-choice" domain="Guidelines for Responsible AI" complexity="expert">
+<text>Which metric is most important for evaluating fairness in a hiring recommendation AI system?</text>
+<options>
+<option id="a" correct="false">Overall model accuracy</option>
+<option id="b" correct="true">Equalized odds across demographic groups</option>
+<option id="c" correct="false">Training data size</option>
+<option id="d" correct="false">Model inference speed</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html">Equalized odds ensures fair treatment across different demographic groups in high-stakes decisions like hiring.</explanation>
+</question>
+
+<question id="q016" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which type of machine learning is most appropriate for training an agent to play a strategic game by learning from wins and losses?</text>
+<options>
+<option id="a" correct="false">Supervised learning</option>
+<option id="b" correct="false">Unsupervised learning</option>
+<option id="c" correct="true">Reinforcement learning</option>
+<option id="d" correct="false">Transfer learning</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/reinforcement-learning.html">Reinforcement learning trains agents through rewar
+d and penalty feedback, ideal for strategic game playing.</explanation>
+</question>
+
+<question id="q017" type="multiple-choice" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>Which components are essential for building an effective RAG system? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Document chunking strategy</option>
+<option id="b" correct="true">Vector embedding model</option>
+<option id="c" correct="false">Large training dataset</option>
+<option id="d" correct="true">Similarity search mechanism</option>
+<option id="e" correct="true">Generation model for responses</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html">RAG requires chunking, embeddings, similarity search, and generation models, but not large training datasets.</explanation>
+</question>
+
+<question id="q018" type="single-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>A healthcare organization needs to monitor their ML models for bias drift over time. Which AWS service provides this capability?</text>
+<options>
+<option id="a" correct="false">Amazon CloudWatch</option>
+<option id="b" correct="true">Amazon SageMaker Model Monitor</option>
+<option id="c" correct="false">AWS Config</option>
+<option id="d" correct="false">Amazon Inspector</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html">SageMaker Model Monitor detects data drift, model quality issues, and bias drift in production models.</explanation>
+</question>
+
+<question id="q019" type="single-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>What is the primary advantage of using ensemble methods in machine learning?</text>
+<options>
+<option id="a" correct="false">Faster training time compared to single models</option>
+<option id="b" correct="true">Improved accuracy and robustness by combining multiple models</option>
+<option id="c" correct="false">Lower computational requirements for inference</option>
+<option id="d" correct="false">Simplified model interpretation and explainability</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/ensemble-methods.html">Ensemble methods combine multiple models to reduce bias, variance, and noise, improving overall performance.</explanation>
+</question>
+
+<question id="q020" type="matching" domain="Fundamentals of AI and ML" complexity="expert">
+<text>Match the AWS AI services with their primary use cases:</text>
+<left-items>
+<item id="l1">Amazon Polly</item>
+<item id="l2">Amazon Rekognition</item>
+<item id="l3">Amazon Comprehend</item>
+</left-items>
+<right-items>
+<item id="r1">Sentiment analysis and entity extraction</item>
+<item id="r2">Text-to-speech conversion</item>
+<item id="r3">Image and video analysis</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r3"/>
+<match left-id="l3" right-id="r1"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/machine-learning/latest/dg/aws-machine-learning-services.html">Polly converts text to speech, Rekognition analyzes images/video, and Comprehend processes natural language.</explanation>
+</question>
+
+<question id="q021" type="single-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which approach best addresses the challenge of model transparency in regulated industries?</text>
+<options>
+<option id="a" correct="false">Using only simple linear models</option>
+<option id="b" correct="true">Implementing explainable AI techniques and comprehensive documentation</option>
+<option id="c" correct="false">Avoiding complex models entirely</option>
+<option id="d" correct="false">Focusing solely on model accuracy metrics</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html">Model transparency requires explainable AI methods, documentation, and interpretability tools beyond simple models.</explanation>
+</question>
+
+<question id="q022" type="single-choice" domain="Security, Compliance, and Governance" complexity="expert">
+<text>Which pricing model offers the most cost savings for ML training workloads that can tolerate interru
+ptions?</text>
+<options>
+<option id="a" correct="false">On-Demand instances</option>
+<option id="b" correct="true">Spot instances</option>
+<option id="c" correct="false">Reserved instances</option>
+<option id="d" correct="false">Dedicated hosts</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html">Spot instances can provide up to 90% cost savings but may be reclaimed with short notice, suitable for fault-tolerant workloads.</explanation>
+</question>
+
+<question id="q023" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>When implementing continuous learning for a production ML model, which approach helps maintain model performance over time?</text>
+<options>
+<option id="a" correct="false">Never updating the model after deployment</option>
+<option id="b" correct="true">Regular retraining with new data and performance monitoring</option>
+<option id="c" correct="false">Increasing model complexity periodically</option>
+<option id="d" correct="false">Using only historical training data</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html">Continuous learning requires regular retraining with fresh data and ongoing performance monitoring to adapt to changing patterns.</explanation>
+</question>
+
+<question id="q024" type="multiple-choice" domain="Fundamentals of Generative AI" complexity="expert">
+<text>Which factors influence the computational complexity of transformer models? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Sequence length of input text</option>
+<option id="b" correct="true">Number of attention heads</option>
+<option id="c" correct="false">Training dataset size only</option>
+<option id="d" correct="true">Model depth (number of layers)</option>
+<option id="e" correct="true">Hidden dimension size</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Transformer complexity depends on sequence length, attention heads, layers, and dimensions, not just dataset size.</explanation>
+</question>
+
+<question id="q025" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon service would be most appropriate for real-time language translation in a multilingual chat application?</text>
+<options>
+<option id="a" correct="false">Amazon Comprehend</option>
+<option id="b" correct="true">Amazon Translate</option>
+<option id="c" correct="false">Amazon Transcribe</option>
+<option id="d" correct="false">Amazon Polly</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/translate/latest/dg/what-is.html">Amazon Translate provides real-time and batch language translation capabilities for multilingual applications.</explanation>
+</question>
+
+<question id="q026" type="single-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>What is the primary challenge when deploying large language models in resource-constrained environments?</text>
+<options>
+<option id="a" correct="false">Limited training data availability</option>
+<option id="b" correct="true">High memory and computational requirements</option>
+<option id="c" correct="false">Lack of model interpretability</option>
+<option id="d" correct="false">Insufficient model accuracy</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/large-model-inference.html">Large language models require significant memory and computational resources, making deployment challenging in constrained environments.</explanation>
+</question>
+
+<question id="q027" type="single-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which principle should guide AI development when considering environmental sustainability?</text>
+<options>
+<option id="a" correct="false">Maximizing model size for better performance</option>
+<option id="b" correct="true">Optimizing computational efficiency and energy consumption</option>
+<option id="c" correct="false">Using only cloud-based training resources</option>
+<option id="d" correct="false">Prioritizing speed over energy efficiency</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html">Environmental sustainability requires optimizing computational efficiency and minimizing energy consumption in AI systems.</explanation>
+</question>
+
+<question id="q028" type="multiple-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>Which AWS services
+ help implement comprehensive MLOps practices? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Amazon SageMaker Pipelines for workflow automation</option>
+<option id="b" correct="true">Amazon SageMaker Model Registry for version control</option>
+<option id="c" correct="false">Amazon S3 for data storage only</option>
+<option id="d" correct="true">AWS CloudTrail for audit logging</option>
+<option id="e" correct="true">Amazon SageMaker Model Monitor for performance tracking</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-projects.html">MLOps requires workflow automation, version control, audit logging, and monitoring, beyond just data storage.</explanation>
+</question>
+
+<question id="q029" type="single-choice" domain="Fundamentals of AI and ML" complexity="expert">
+<text>A company wants to detect anomalies in network traffic patterns. Which type of machine learning approach would be most effective?</text>
+<options>
+<option id="a" correct="false">Supervised classification with labeled anomalies</option>
+<option id="b" correct="true">Unsupervised anomaly detection</option>
+<option id="c" correct="false">Reinforcement learning with reward signals</option>
+<option id="d" correct="false">Semi-supervised learning with partial labels</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/randomcutforest.html">Unsupervised anomaly detection identifies unusual patterns without requiring labeled examples of anomalies.</explanation>
+</question>
+
+<question id="q030" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>When implementing A/B testing for ML models in production, what is the primary benefit?</text>
+<options>
+<option id="a" correct="false">Reducing model training time</option>
+<option id="b" correct="true">Comparing model performance with real user traffic</option>
+<option id="c" correct="false">Eliminating the need for model validation</option>
+<option id="d" correct="false">Automatically selecting the best algorithm</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-ab-testing.html">A/B testing allows comparison of different models using real production traffic to measure actual business impact.</explanation>
+</question>
+
+<question id="q031" type="matching" domain="Fundamentals of Generative AI" complexity="expert">
+<text>Match the model evaluation metrics with their appropriate use cases:</text>
+<left-items>
+<item id="l1">F1-Score</item>
+<item id="l2">AUC-ROC</item>
+<item id="l3">Mean Squared Error</item>
+</left-items>
+<right-items>
+<item id="r1">Regression model performance</item>
+<item id="r2">Binary classification with class imbalance</item>
+<item id="r3">Overall binary classifier performance</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r3"/>
+<match left-id="l3" right-id="r1"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-validation.html">F1-Score handles class imbalance, AUC-ROC measures overall classification performance, and MSE evaluates regression models.</explanation>
+</question>
+
+<question id="q032" type="single-choice" domain="Guidelines for Responsible AI" complexity="expert">
+<text>Which approach best ensures algorithmic accountability in AI systems that impact human decisions?</text>
+<options>
+<option id="a" correct="false">Using only automated decision-making processes</option>
+<option id="b" correct="true">Implementing human oversight and appeal mechanisms</option>
+<option id="c" correct="false">Maximizing model complexity for better accuracy</option>
+<option id="d" correct="false">Eliminating human involvement in the process</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html">Algorithmic accountability requires human oversight, appeal processes, and mechanisms for challenging automated decisions.</explanation>
+</question>
+
+<question id="q033" type="single-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>Which AWS service provides centralized visibility into model behavior and performance across multiple SageMaker endpoints?</text>
+<options>
+
+<option id="a" correct="false">Amazon CloudWatch</option>
+<option id="b" correct="true">Amazon SageMaker Model Dashboard</option>
+<option id="c" correct="false">AWS Systems Manager</option>
+<option id="d" correct="false">AWS Config</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-dashboard.html">SageMaker Model Dashboard provides centralized monitoring and visibility into model behavior across production environments.</explanation>
+</question>
+
+<question id="q034" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>When implementing vector similarity search for RAG systems, which AWS service provides serverless scaling capabilities?</text>
+<options>
+<option id="a" correct="false">Amazon RDS</option>
+<option id="b" correct="true">Amazon OpenSearch Serverless</option>
+<option id="c" correct="false">Amazon DynamoDB</option>
+<option id="d" correct="false">Amazon Aurora</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html">Amazon OpenSearch Serverless provides automatic scaling and cost optimization for vector similarity search in RAG systems.</explanation>
+</question>
+
+<question id="q035" type="multiple-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which data preprocessing techniques are commonly used in machine learning pipelines? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Exploratory Data Analysis (EDA)</option>
+<option id="b" correct="true">Data cleaning and validation</option>
+<option id="c" correct="false">Model deployment automation</option>
+<option id="d" correct="true">Feature transformation and scaling</option>
+<option id="e" correct="true">Handling missing values and outliers</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/data-prep.html">Data preprocessing includes EDA, cleaning, transformation, and handling missing values, but not deployment automation.</explanation>
+</question>
+
+<question id="q036" type="single-choice" domain="Fundamentals of Generative AI" complexity="expert">
+<text>What is the main purpose of using temperature settings in generative AI models?</text>
+<options>
+<option id="a" correct="false">To control model training speed</option>
+<option id="b" correct="true">To adjust the randomness and creativity of generated outputs</option>
+<option id="c" correct="false">To optimize memory usage during inference</option>
+<option id="d" correct="false">To prevent model overfitting</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/inference-parameters.html">Temperature controls the randomness in text generation, with higher values producing more creative and diverse outputs.</explanation>
+</question>
+
+<question id="q037" type="single-choice" domain="Applications of Foundation Models" complexity="advanced">
+<text>Which approach is most effective for adapting a general-purpose language model to a specific domain like legal or medical text?</text>
+<options>
+<option id="a" correct="false">Using only prompt engineering techniques</option>
+<option id="b" correct="true">Domain-specific fine-tuning with relevant datasets</option>
+<option id="c" correct="false">Increasing the model size significantly</option>
+<option id="d" correct="false">Training a new model from scratch</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html">Domain-specific fine-tuning adapts pre-trained models to specialized domains more efficiently than training from scratch.</explanation>
+</question>
+
+<question id="q038" type="single-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which consideration is most important when developing AI systems for vulnerable populations?</text>
+<options>
+<option id="a" correct="false">Maximizing system automation</option>
+<option id="b" correct="true">Ensuring additional safeguards and human oversight</option>
+<option id="c" correct="false">Reducing system complexity</option>
+<option id="d" correct="false">Minimizing development costs</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/responsible-ai.html">AI systems affecting vulnerable populations require enhanced safeguards, oversight, and protection mechanisms.</explanation>
+</question>
+
+<question id="q039" type="multiple-choice" domain="Security, Compliance, and Governance" complexity="expert">
+<text>Which practices help ensure secure ML model deployment? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Network isolation using VPC endpoints</option
+>
+<option id="b" correct="true">Encryption of model artifacts and data</option>
+<option id="c" correct="false">Public access to all model endpoints</option>
+<option id="d" correct="true">Role-based access control with IAM</option>
+<option id="e" correct="true">Regular security audits and vulnerability assessments</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/security.html">Secure deployment requires network isolation, encryption, access control, and audits, not public access.</explanation>
+</question>
+
+<question id="q040" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon service would be most appropriate for building a conversational AI assistant that understands voice commands?</text>
+<options>
+<option id="a" correct="true">Amazon Lex</option>
+<option id="b" correct="false">Amazon Comprehend</option>
+<option id="c" correct="false">Amazon Transcribe</option>
+<option id="d" correct="false">Amazon Translate</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/lex/latest/dg/what-is.html">Amazon Lex provides natural language understanding and automatic speech recognition for building conversational interfaces.</explanation>
+</question>
+
+<question id="q041" type="single-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>When implementing multi-modal AI applications, what is the primary challenge in aligning different data modalities?</text>
+<options>
+<option id="a" correct="false">Storage capacity limitations</option>
+<option id="b" correct="true">Semantic alignment between different representation spaces</option>
+<option id="c" correct="false">Processing speed differences</option>
+<option id="d" correct="false">Data format compatibility issues</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Multi-modal AI requires aligning semantic representations across different modalities like text, images, and audio.</explanation>
+</question>
+
+<question id="q042" type="matching" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>Match the ML deployment patterns with their characteristics:</text>
+<left-items>
+<item id="l1">Batch inference</item>
+<item id="l2">Real-time inference</item>
+<item id="l3">Async inference</item>
+</left-items>
+<right-items>
+<item id="r1">Low-latency responses for interactive applications</item>
+<item id="r2">Processing large datasets offline</item>
+<item id="r3">Handling variable workloads with queuing</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r1"/>
+<match left-id="l3" right-id="r3"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/inference-options.html">Batch processes large datasets, real-time serves interactive apps, and async handles variable workloads with queuing.</explanation>
+</question>
+
+<question id="q043" type="single-choice" domain="Guidelines for Responsible AI" complexity="expert">
+<text>Which approach best addresses the challenge of AI system reliability in safety-critical applications?</text>
+<options>
+<option id="a" correct="false">Using only the most accurate models available</option>
+<option id="b" correct="true">Implementing redundancy, testing, and fail-safe mechanisms</option>
+<option id="c" correct="false">Maximizing automation to reduce human error</option>
+<option id="d" correct="false">Deploying models as quickly as possible</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-validation.html">Safety-critical applications require redundancy, extensive testing, fail-safe mechanisms, and robust validation processes.</explanation>
+</question>
+
+<question id="q044" type="single-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>Which AWS service helps organizations maintain compliance documentation and evidence for AI/ML systems?</text>
+<options>
+<option id="a" correct="false">AWS Config</option>
+<option id="b" correct="true">AWS Artifact</option>
+<option id="c" correct="false">Amazon Inspector</option>
+<option id="d" correct="false">AWS Systems Manager</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html">AWS Artifact provides access to compliance reports and documentation needed for regulatory requirements.</explanation>
+</question>
+
+<question id="q045" type="multiple-choice" domain="Applications of Foundation Models" complexity="advanced">
+
+<text>Which factors affect the quality of embeddings in vector databases? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Quality of the embedding model used</option>
+<option id="b" correct="true">Dimensionality of the vector space</option>
+<option id="c" correct="false">Database storage capacity only</option>
+<option id="d" correct="true">Training data diversity for the embedding model</option>
+<option id="e" correct="true">Text preprocessing and chunking strategies</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/embeddings.html">Embedding quality depends on model quality, dimensionality, training data diversity, and preprocessing, not just storage.</explanation>
+</question>
+
+<question id="q046" type="single-choice" domain="Fundamentals of AI and ML" complexity="expert">
+<text>A company needs to process streaming data for real-time fraud detection. Which type of inference pattern is most appropriate?</text>
+<options>
+<option id="a" correct="false">Batch inference with daily processing</option>
+<option id="b" correct="true">Real-time inference with low latency</option>
+<option id="c" correct="false">Async inference with queuing</option>
+<option id="d" correct="false">Serverless inference with cold starts</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html">Fraud detection requires real-time inference with low latency to make immediate decisions on transactions.</explanation>
+</question>
+
+<question id="q047" type="single-choice" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>What is the primary purpose of using context windows in large language models?</text>
+<options>
+<option id="a" correct="false">To reduce model training time</option>
+<option id="b" correct="true">To limit the amount of input text the model can process at once</option>
+<option id="c" correct="false">To improve model accuracy on short texts</option>
+<option id="d" correct="false">To enable parallel processing of multiple requests</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Context windows define the maximum amount of text (tokens) that a model can process in a single inference request.</explanation>
+</question>
+
+<question id="q048" type="single-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>When implementing continuous integration for ML models, which practice is most important for maintaining model quality?</text>
+<options>
+<option id="a" correct="false">Deploying models immediately after training</option>
+<option id="b" correct="true">Automated testing and validation pipelines</option>
+<option id="c" correct="false">Using only the latest algorithms available</option>
+<option id="d" correct="false">Maximizing model complexity</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-projects.html">Continuous integration for ML requires automated testing, validation, and quality checks before deployment.</explanation>
+</question>
+
+<question id="q049" type="multiple-choice" domain="Guidelines for Responsible AI" complexity="expert">
+<text>Which principles should guide the development of AI systems in healthcare? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Patient privacy and data protection</option>
+<option id="b" correct="true">Clinical validation and safety testing</option>
+<option id="c" correct="false">Maximizing automation without human oversight</option>
+<option id="d" correct="true">Transparency in AI-assisted diagnoses</option>
+<option id="e" correct="true">Equity and fairness across patient populations</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/compliance/latest/userguide/hipaa-compliance.html">Healthcare AI requires privacy protection, clinical validation, transparency, and equity, not unchecked automation.</explanation>
+</question>
+
+<question id="q050" type="single-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>Which approach best ensures data lineage tracking in ML pipelines?</text>
+<options>
+<option id="a" correct="false">Manual documentation of data sources</option>
+<option id="b" correct="true">Automated metadata capture and versioning systems</option>
+<option id="c" correct="false">Storing all data in a single location</option>
+<option id="d" correct="false">Using only structure
+d data formats</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/lineage-tracking.html">Data lineage requires automated systems to capture metadata, track data flow, and maintain version history.</explanation>
+</question>
+
+<question id="q051" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon service would be most appropriate for extracting entities and relationships from legal documents?</text>
+<options>
+<option id="a" correct="false">Amazon Textract</option>
+<option id="b" correct="true">Amazon Comprehend</option>
+<option id="c" correct="false">Amazon Translate</option>
+<option id="d" correct="false">Amazon Transcribe</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html">Amazon Comprehend provides natural language processing capabilities for entity extraction and relationship analysis from text.</explanation>
+</question>
+
+<question id="q052" type="matching" domain="Applications of Foundation Models" complexity="expert">
+<text>Match the model optimization strategies with their primary benefits:</text>
+<left-items>
+<item id="l1">Model compression</item>
+<item id="l2">Caching strategies</item>
+<item id="l3">Load balancing</item>
+</left-items>
+<right-items>
+<item id="r1">Distributing requests across multiple instances</item>
+<item id="r2">Reducing model size and inference time</item>
+<item id="r3">Storing frequently accessed results</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r3"/>
+<match left-id="l3" right-id="r1"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-optimization.html">Compression reduces size, caching stores results, and load balancing distributes requests for optimal performance.</explanation>
+</question>
+
+<question id="q053" type="single-choice" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>What is the main advantage of using pre-trained foundation models compared to training models from scratch?</text>
+<options>
+<option id="a" correct="false">Lower computational costs for inference</option>
+<option id="b" correct="true">Reduced training time and data requirements</option>
+<option id="c" correct="false">Better model interpretability</option>
+<option id="d" correct="false">Guaranteed higher accuracy on all tasks</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Pre-trained models leverage existing knowledge, requiring less training time and data for adaptation to specific tasks.</explanation>
+</question>
+
+<question id="q054" type="single-choice" domain="Guidelines for Responsible AI" complexity="expert">
+<text>Which approach best ensures inclusive AI development that considers diverse user needs?</text>
+<options>
+<option id="a" correct="false">Using only majority group data for training</option>
+<option id="b" correct="true">Involving diverse stakeholders in design and testing processes</option>
+<option id="c" correct="false">Focusing solely on technical performance metrics</option>
+<option id="d" correct="false">Deploying models without user feedback</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/responsible-ai.html">Inclusive AI requires diverse stakeholder involvement, representative data, and consideration of varied user needs and contexts.</explanation>
+</question>
+
+<question id="q055" type="multiple-choice" domain="Security, Compliance, and Governance" complexity="advanced">
+<text>Which AWS services support compliance with data residency requirements? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">AWS Regions for geographic data placement</option>
+<option id="b" correct="true">AWS Local Zones for edge computing</option>
+<option id="c" correct="false">AWS Global Accelerator for performance</option>
+<option id="d" correct="true">AWS Outposts for on-premises deployment</option>
+<option id="e" correct="true">AWS GovCloud for government workloads</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/compliance/latest/userguide/data-residency.html">Data residency compliance uses Regions, Local Zones, Outposts, and GovCloud for geographic control, not performance services.</explanation>
+</question>
+
+<question id="q056" type="single-choice" domain="Applications of Foundation Models" complexity
+="advanced">
+<text>When implementing model versioning in production, what is the primary benefit of maintaining multiple model versions?</text>
+<options>
+<option id="a" correct="false">Reducing storage costs</option>
+<option id="b" correct="true">Enabling rollback capabilities and A/B testing</option>
+<option id="c" correct="false">Improving model training speed</option>
+<option id="d" correct="false">Simplifying deployment processes</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html">Model versioning enables safe rollbacks, A/B testing, and gradual deployment strategies for production systems.</explanation>
+</question>
+
+<question id="q057" type="single-choice" domain="Fundamentals of AI and ML" complexity="expert">
+<text>A company wants to predict customer churn using historical behavior data. Which evaluation metric would be most appropriate for this imbalanced classification problem?</text>
+<options>
+<option id="a" correct="false">Overall accuracy</option>
+<option id="b" correct="true">F1-Score or AUC-ROC</option>
+<option id="c" correct="false">Mean Squared Error</option>
+<option id="d" correct="false">R-squared</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-validation.html">Imbalanced classification problems require metrics like F1-Score or AUC-ROC that account for class distribution.</explanation>
+</question>
+
+<question id="q058" type="single-choice" domain="Fundamentals of Generative AI" complexity="advanced">
+<text>What is the primary purpose of using stop sequences in text generation models?</text>
+<options>
+<option id="a" correct="false">To improve model accuracy</option>
+<option id="b" correct="true">To control when the model stops generating text</option>
+<option id="c" correct="false">To reduce computational costs</option>
+<option id="d" correct="false">To prevent model overfitting</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/inference-parameters.html">Stop sequences define specific tokens or phrases that signal the model to stop generating additional text.</explanation>
+</question>
+
+<question id="q059" type="multiple-choice" domain="Applications of Foundation Models" complexity="expert">
+<text>Which strategies can improve the robustness of production ML systems? (Select all that apply)</text>
+<options>
+<option id="a" correct="true">Implementing circuit breakers and fallback mechanisms</option>
+<option id="b" correct="true">Monitoring for data drift and model degradation</option>
+<option id="c" correct="false">Deploying models without testing</option>
+<option id="d" correct="true">Using canary deployments for gradual rollouts</option>
+<option id="e" correct="true">Implementing automated alerting and recovery</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html">Robust systems require circuit breakers, monitoring, canary deployments, and automated recovery, not untested deployments.</explanation>
+</question>
+
+<question id="q060" type="single-choice" domain="Guidelines for Responsible AI" complexity="advanced">
+<text>Which consideration is most important when deploying AI systems that process personal data?</text>
+<options>
+<option id="a" correct="false">Maximizing data collection for better models</option>
+<option id="b" correct="true">Implementing privacy-by-design principles</option>
+<option id="c" correct="false">Using only anonymized data</option>
+<option id="d" correct="false">Avoiding user consent mechanisms</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/privacy.html">Privacy-by-design ensures data protection is built into systems from the ground up, not added as an afterthought.</explanation>
+</question>
+
+<question id="q061" type="single-choice" domain="Security, Compliance, and Governance" complexity="expert">
+<text>Which AWS service provides the most comprehensive solution for managing ML model governance across the entire lifecycle?</text>
+<options>
+<option id="a" correct="false">Amazon CloudWatch</option>
+<option id="b" correct="true">Amazon SageMaker Model Registry</option>
+<option id="c" correct="false">AWS Config</option>
+<option id="d" correct="false">Amazon Inspector</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html">SageMaker Model Registry
+ provides comprehensive model governance including versioning, approval workflows, and lifecycle management.</explanation>
+</question>
+
+<question id="q062" type="single-choice" domain="Fundamentals of AI and ML" complexity="advanced">
+<text>Which Amazon service would be most appropriate for generating natural-sounding speech from text in multiple languages?</text>
+<options>
+<option id="a" correct="false">Amazon Transcribe</option>
+<option id="b" correct="true">Amazon Polly</option>
+<option id="c" correct="false">Amazon Translate</option>
+<option id="d" correct="false">Amazon Lex</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/polly/latest/dg/what-is.html">Amazon Polly converts text into lifelike speech with support for multiple languages and voices.</explanation>
+</question>
+
+<question id="q063" type="matching" domain="Applications of Foundation Models" complexity="advanced">
+<text>Match the ML pipeline stages with their primary activities:</text>
+<left-items>
+<item id="l1">Data preparation</item>
+<item id="l2">Model training</item>
+<item id="l3">Model deployment</item>
+</left-items>
+<right-items>
+<item id="r1">Serving models for inference</item>
+<item id="r2">Cleaning and transforming raw data</item>
+<item id="r3">Learning patterns from training data</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r2"/>
+<match left-id="l2" right-id="r3"/>
+<match left-id="l3" right-id="r1"/>
+</correct-matches>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html">Data preparation cleans data, training learns patterns, and deployment serves models for inference.</explanation>
+</question>
+
+<question id="q064" type="single-choice" domain="Fundamentals of Generative AI" complexity="expert">
+<text>What is the main challenge when scaling attention mechanisms in transformer models to very long sequences?</text>
+<options>
+<option id="a" correct="false">Linear increase in memory usage</option>
+<option id="b" correct="true">Quadratic computational complexity</option>
+<option id="c" correct="false">Exponential growth in parameters</option>
+<option id="d" correct="false">Reduced model accuracy</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models.html">Attention mechanisms have quadratic complexity with sequence length, making very long sequences computationally expensive.</explanation>
+</question>
+
+<question id="q065" type="single-choice" domain="Guidelines for Responsible AI" complexity="expert">
+<text>Which principle should guide AI development when considering long-term societal impact?</text>
+<options>
+<option id="a" correct="false">Prioritizing short-term business gains</option>
+<option id="b" correct="true">Considering broader social implications and stakeholder needs</option>
+<option id="c" correct="false">Focusing only on technical innovation</option>
+<option id="d" correct="false">Maximizing system capabilities without constraints</option>
+</options>
+<explanation uri="https://docs.aws.amazon.com/sagemaker/latest/dg/responsible-ai.html">Responsible AI development requires considering long-term societal impact, stakeholder needs, and broader social implications.</explanation>
+</question>
+
+</quiz>

@@ -1,0 +1,216 @@
+<quiz>
+<metadata>
+<title>Scrum Quiz</title>
+<info>
+<knowledge-area>Scrum</knowledge-area>
+<total-questions>16</total-questions>
+<model>Claude</model>
+<temperature>0</temperature>
+</info>
+</metadata>
+
+<question id="q001" type="single-choice" domain="Sprint Planning" complexity="advanced">
+<text>Your team is halfway through Sprint Planning when they discover that a key dependency service will be unavailable during the Sprint due to scheduled maintenance. The Product Owner insists on maintaining the Sprint Goal. What should the Scrum Master facilitate?</text>
+<options>
+<option id="a" correct="false">Recommend the team commit to the original Sprint Goal and work around the dependency during the Sprint</option>
+<option id="b" correct="true">Guide a discussion to redefine the Sprint Goal or adjust the Sprint Backlog to work without the dependency</option>
+<option id="c" correct="false">Escalate to management to postpone the maintenance window</option>
+<option id="d" correct="false">Split the team to work on alternative backlog items while waiting for the dependency</option>
+</options>
+<explanation>Sprint Planning should result in a realistic Sprint Goal and backlog. When dependencies threaten achievability, the team should adapt the goal or backlog rather than commit to unrealistic objectives. This maintains empirical process control and sustainable pace.</explanation>
+</question>
+
+<question id="q002" type="multiple-choice" domain="Product Backlog Management" complexity="advanced">
+<text>During backlog refinement, stakeholders request detailed estimates for items planned 6 months ahead. Which approaches best balance stakeholder needs with agile principles?</text>
+<options>
+<option id="a" correct="true">Provide high-level sizing using t-shirt sizes or story point ranges</option>
+<option id="b" correct="false">Create detailed estimates for all items to satisfy stakeholder requirements</option>
+<option id="c" correct="true">Focus refinement efforts on items likely to be developed in upcoming Sprints</option>
+<option id="d" correct="true">Educate stakeholders on the cone of uncertainty and estimation accuracy over time</option>
+<option id="e" correct="false">Assign the Product Owner to provide all long-term estimates independently</option>
+</options>
+<explanation>Agile estimation recognizes that accuracy decreases with distance from development. High-level sizing, focusing on near-term items, and stakeholder education about uncertainty maintain agility while providing useful planning information.</explanation>
+</question>
+
+<question id="q003" type="single-choice" domain="Impediment Management" complexity="advanced">
+<text>A critical team member consistently dominates Daily Scrums, preventing others from contributing meaningfully. After addressing this privately with no improvement, what is the most effective next step for the Scrum Master?</text>
+<options>
+<option id="a" correct="false">Remove the team member from Daily Scrums temporarily</option>
+<option id="b" correct="true">Introduce structured facilitation techniques like round-robin or timeboxing individual updates</option>
+<option id="c" correct="false">Ask the Product Owner to address the behavior in the next Sprint Review</option>
+<option id="d" correct="false">Schedule separate one-on-one check-ins with other team members</option>
+</options>
+<explanation>Structured facilitation techniques help ensure equal participation while maintaining the collaborative nature of Daily Scrums. This addresses the impediment systematically without excluding team members or changing the event&apos;s purpose.</explanation>
+</question>
+
+<question id="q004" type="single-choice" domain="Sprint Execution" complexity="intermediate">
+<text>During a Sprint, the team discovers they cannot complete a user story due to an external API change. The story represents 30% of the Sprint&apos;s planned work. What should happen?</text>
+<options>
+<option id="a" correct="false">Extend the Sprint by the time needed to resolve the API issue</option>
+<option id="b" correct="true">Remove the story from the Sprint Backlog and discuss alternatives with the Product Owner</option>
+<option id="c" correct="false">Mark the story as complete but document the API limitation</option>
+<option id="d" correct="false">Reassign team members to work on other Product Backlog items</option>
+</options>
+<explanation>When work cannot be completed due to external factors, the Sprint Backlog should be adjusted. The team should collaborate with the Product Owner to determine the best course of action while maintaining the Sprint Goal if possible.</explanation>
+</question>
+
+<question id="q005" type="matching" domain="Stakeholder Management" complexity="expert">
+<text>Match each stakeholder engagement challenge with the most effective Scrum Master intervention:</text>
+<left-items>
+<item id="l1">Stakeholders bypassing Product Owner with direct requests to developers</item>
+<item id="l2">Executive pressure for detailed long-term delivery commitments</item>
+<item id="l3">Business users requesting changes mid-Sprint</item>
+<item id="l4">Department managers questioning team productivity</item>
+</left-items>
+<right-items>
+<item id="r1">Facilitate transparency sessions showing empirical data and team metrics</item>
+<item id="r2">Coach on probabilistic forecasting using historical velocity and burnup charts</item>
+<item id="r3">Reinforce Product Owner accountability and communication protocols</item>
+<item id="r4">Educate on Sprint commitment and guide to Sprint Review for feedback</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r3"/>
+<match left-id="l2" right-id="r2"/>
+<match left-id="l3" right-id="r4"/>
+<match left-id="l4" right-id="r1"/>
+</correct-matches>
+<explanation>Effective stakeholder management requires different approaches: reinforcing roles and accountabilities, educating on agile planning methods, protecting Sprint integrity, and providing transparency through empirical data rather than subjective assessments.</explanation>
+</question>
+
+<question id="q006" type="single-choice" domain="Sprint Review" complexity="advanced">
+<text>During Sprint Review, stakeholders provide conflicting feedback about the product direction. The Product Owner appears uncertain about prioritization. How should the Scrum Master best support the situation?</text>
+<options>
+<option id="a" correct="false">Facilitate a voting session to determine the most popular direction</option>
+<option id="b" correct="true">Guide the Product Owner to schedule follow-up stakeholder alignment sessions outside the Sprint Review</option>
+<option id="c" correct="false">Suggest the team implement multiple options in parallel during the next Sprint</option>
+<option id="d" correct="false">Recommend postponing the next Sprint until direction is clarified</option>
+</options>
+<explanation>Sprint Review should focus on demonstrating the Increment and gathering feedback. Complex stakeholder alignment discussions should be handled separately to respect the event&apos;s timebox and purpose while supporting the Product Owner&apos;s accountability for stakeholder management.</explanation>
+</question>
+
+<question id="q007" type="multiple-choice" domain="Team Dynamics" complexity="advanced">
+<text>A high-performing team experiences a significant drop in velocity after adding two new team members. Which factors most likely contribute to this temporary performance decrease?</text>
+<options>
+<option id="a" correct="true">Knowledge transfer overhead and increased coordination complexity</option>
+<option id="b" correct="false">New members lacking sufficient technical skills for the work</option>
+<option id="c" correct="true">Existing team members spending time on mentoring and onboarding</option>
+<option id="d" correct="true">Team forming stages as group dynamics re-establish</option>
+<option id="e" correct="false">Insufficient work allocation for the expanded team size</option>
+</options>
+<explanation>Adding team members creates temporary productivity decreases due to knowledge transfer overhead, mentoring time investment, coordination complexity, and team reformation dynamics. This is a normal pattern described in Brooks&apos; Law and Tuckman&apos;s team development model.</explanation>
+</question>
+
+<question id="q008" type="single-choice" domain="Product Backlog Management" complexity="intermediate">
+<text>The Product Owner struggles to prioritize between technical debt reduction and new feature development. The team reports increasing development difficulty. What guidance should the Scrum Master provide?</text>
+<options>
+<option id="a" correct="false">Recommend allocating 20% of each Sprint to technical debt as a fixed rule</option>
+<option id="b" correct="true">Facilitate discussions about the impact of technical debt on future delivery velocity and quality</option>
+<option id="c" correct="false">Advise the Product Owner to prioritize features since they provide direct business value</option>
+<option id="d" correct="false">Suggest the team handle technical debt during their own time to avoid impacting feature delivery</option>
+</options>
+<explanation>The Scrum Master should help the Product Owner understand the relationship between technical debt and sustainable delivery pace. This enables informed prioritization decisions based on empirical evidence rather than arbitrary rules or unsustainable practices.</explanation>
+</question>
+
+<question id="q009" type="single-choice" domain="Sprint Retrospective" complexity="advanced">
+<text>Your team&apos;s retrospectives have become routine with the same issues raised repeatedly but no lasting improvements. What intervention would most likely break this pattern?</text>
+<options>
+<option id="a" correct="false">Reduce retrospective frequency to allow more time for implementing changes</option>
+<option id="b" correct="true">Introduce new retrospective formats and focus on experimenting with small, measurable changes</option>
+<option id="c" correct="false">Invite external stakeholders to provide fresh perspectives on team improvements</option>
+<option id="d" correct="false">Create action items with specific owners and due dates for all identified issues</option>
+</options>
+<explanation>Routine retrospectives often benefit from format changes and experimental approaches. Small, measurable experiments are more likely to succeed and create momentum than large action plans. The focus should be on learning and adaptation rather than comprehensive problem-solving.</explanation>
+</question>
+
+<question id="q010" type="matching" domain="Quality Practices" complexity="advanced">
+<text>Match each quality practice with its primary benefit in Scrum implementation:</text>
+<left-items>
+<item id="l1">Test-Driven Development</item>
+<item id="l2">Continuous Integration</item>
+<item id="l3">Pair Programming</item>
+<item id="l4">Automated Regression Testing</item>
+</left-items>
+<right-items>
+<item id="r1">Enables confident refactoring and maintains code quality during rapid iterations</item>
+<item id="r2">Facilitates knowledge sharing and real-time code quality improvement</item>
+<item id="r3">Provides immediate feedback on integration issues and maintains releasable increments</item>
+<item id="r4">Drives emergent design and ensures code meets requirements before implementation</item>
+</right-items>
+<correct-matches>
+<match left-id="l1" right-id="r4"/>
+<match left-id="l2" right-id="r3"/>
+<match left-id="l3" right-id="r2"/>
+<match left-id="l4" right-id="r1"/>
+</correct-matches>
+<explanation>Technical practices support Scrum by enabling rapid, sustainable development: TDD drives design from requirements, CI provides integration feedback, pair programming shares knowledge, and automated testing enables safe refactoring and maintains releasable increments.</explanation>
+</question>
+
+<question id="q011" type="single-choice" domain="Stakeholder Management" complexity="advanced">
+<text>A key stakeholder consistently arrives late to Sprint Reviews and immediately requests detailed explanations of technical implementation decisions. This disrupts the flow and extends meetings beyond their timebox. What should the Scrum Master do?</text>
+<options>
+<option id="a" correct="false">Start the Sprint Review late to accommodate the stakeholder&apos;s schedule</option>
+<option id="b" correct="true">Coach the stakeholder on Sprint Review purpose and arrange separate technical sessions for detailed discussions</option>
+<option id="c" correct="false">Ask the team to prepare technical summaries for late-arriving stakeholders</option>
+<option id="d" correct="false">Record the Sprint Review so the stakeholder can catch up on missed content</option>
+</options>
+<explanation>Sprint Reviews should focus on inspecting the Increment and adapting the Product Backlog. Technical implementation discussions belong in separate forums. The Scrum Master should protect the event&apos;s purpose while serving stakeholder needs through appropriate channels.</explanation>
+</question>
+
+<question id="q012" type="multiple-choice" domain="Metrics and Measurement" complexity="advanced">
+<text>Which metrics provide the most actionable insights for improving team performance and delivery predictability?</text>
+<options>
+<option id="a" correct="true">Cycle time and lead time distributions</option>
+<option id="b" correct="false">Individual productivity measurements and code commits per developer</option>
+<option id="c" correct="true">Cumulative flow diagrams showing work-in-progress patterns</option>
+<option id="d" correct="true">Escaped defect rates and time spent on rework</option>
+<option id="e" correct="false">Sprint burndown chart completion percentages</option>
+</options>
+<explanation>Flow metrics (cycle time, lead time, cumulative flow) and quality metrics (defect rates, rework) provide actionable insights for process improvement. Individual productivity metrics can be counterproductive to team collaboration, and burndown completion percentages don&apos;t indicate process health.</explanation>
+</question>
+
+<question id="q013" type="single-choice" domain="Product Owner Support" complexity="advanced">
+<text>The Product Owner frequently changes story priorities during Sprints, causing team frustration and incomplete work. The Product Owner justifies this as responding to changing market conditions. How should the Scrum Master address this?</text>
+<options>
+<option id="a" correct="false">Support the Product Owner&apos;s responsiveness to market changes as a competitive advantage</option>
+<option id="b" correct="true">Coach the Product Owner on Sprint commitment principles while helping establish processes for managing urgent changes</option>
+<option id="c" correct="false">Recommend longer Sprints to reduce the frequency of priority changes</option>
+<option id="d" correct="false">Suggest the team work on multiple stories simultaneously to accommodate changes</option>
+</options>
+<explanation>The Scrum Master should help the Product Owner understand that Sprint commitment enables focus and completion while establishing appropriate channels for handling truly urgent changes. This balances market responsiveness with team effectiveness and sustainable delivery.</explanation>
+</question>
+
+<question id="q014" type="single-choice" domain="Impediment Management" complexity="advanced">
+<text>Your team identifies a systemic organizational impediment that requires C-level executive attention to resolve. The impediment significantly impacts multiple teams&apos; effectiveness. What is the Scrum Master&apos;s most appropriate action?</text>
+<options>
+<option id="a" correct="false">Document the impediment and wait for it to surface in higher-level organizational reviews</option>
+<option id="b" correct="true">Escalate through appropriate organizational channels while providing data on the impediment&apos;s impact</option>
+<option id="c" correct="false">Work with other Scrum Masters to develop a team-level workaround solution</option>
+<option id="d" correct="false">Advise teams to adapt their processes to work around the organizational impediment</option>
+</options>
+<explanation>Systemic impediments require escalation with supporting data to demonstrate impact. The Scrum Master serves the organization by making these impediments visible and facilitating their resolution, rather than allowing teams to suffer with workarounds.</explanation>
+</question>
+
+<question id="q015" type="multiple-choice" domain="Cross-functional Collaboration" complexity="advanced">
+<text>Your Development Team lacks certain specialized skills needed for upcoming Product Backlog items. Which approaches best maintain team self-organization while addressing skill gaps?</text>
+<options>
+<option id="a" correct="true">Arrange knowledge transfer sessions with internal experts or external consultants</option>
+<option id="b" correct="false">Add specialists to the team permanently for each required skill</option>
+<option id="c" correct="true">Pair team members with experts during actual development work</option>
+<option id="d" correct="true">Invest Sprint time in learning and experimenting with new technologies</option>
+<option id="e" correct="false">Outsource specialized work to external teams while the Scrum Team focuses on core competencies</option>
+</options>
+<explanation>Self-organizing teams grow their capabilities through learning, pairing, and knowledge transfer while maintaining ownership of their work. Adding permanent specialists or outsourcing reduces self-organization and can create dependencies that limit agility.</explanation>
+</question>
+
+<question id="q016" type="single-choice" domain="Continuous Improvement" complexity="expert">
+<text>After implementing several process improvements from retrospectives, your team&apos;s velocity has increased but stakeholder satisfaction has decreased. What does this indicate about the team&apos;s improvement focus?</text>
+<options>
+<option id="a" correct="false">The team is gaming velocity metrics and should return to previous practices</option>
+<option id="b" correct="true">Process improvements may be optimizing internal efficiency without considering external value delivery</option>
+<option id="c" correct="false">Stakeholder expectations need to be reset to align with the team&apos;s improved capabilities</option>
+<option id="d" correct="false">Velocity increases naturally create temporary stakeholder adjustment periods</option>
+</options>
+<explanation>This scenario suggests the team may be optimizing internal metrics (velocity) without considering external outcomes (stakeholder value). Effective improvement requires balancing internal process efficiency with external value delivery and stakeholder satisfaction.</explanation>
+</question>
+
+</quiz>
